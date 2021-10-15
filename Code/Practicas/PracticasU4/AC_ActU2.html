@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2 Cuadro Comparativo(MySQL-SQLServer)</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Cuadro Comparativo: "MySQL y SQLServer"</h2>
+                <h2>Solución de la Actividad 2</h2>
+                <table align="center" class="table table-dark table-borderless">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr align="center" class="table-secondary">
+                            <th scope="col">Característica</th>
+                            <th scope="col">MySQL Workbench</th>
+                            <th scope="col">SQL Server</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">Definición.</td>
+                                <td align="justify">MySQL es un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto respaldado por Oracle y basado en el lenguaje de consulta estructurado (SQL).</td>
+                                <td align="justify">El lenguaje de desarrollo utilizado (por línea de comandos o mediante la interfaz gráfica de Management Studio) es Transact-SQL (TSQL), una implementación del estándar ANSI del lenguaje SQL, utilizado para manipular y recuperar datos (DML), crear tablas y definir relaciones entre ellas (DDL).</td>
+                              </tr>
+                          <tr>
+                            <tr>
+                                <td align="center">Ventajas.</td>
+                                <td align="justify">1.- MySQL es de uso libre y gratuito.<br>
+                                    2.- Software con Licencia GPL.<br>
+                                    3.- Bajo costo en requerimientos para la elaboración y ejecución del programa.<br>
+                                    4.- No se necesita disponer de Hardware o Software de alto rendimiento para la ejecución del programa.<br>
+                                    5.- Velocidad al realizar las operaciones y buen rendimiento.<br>
+                                    6.- Facilidad de instalación y configuración.<br>
+                                    7.- Soporte en casi el 100% de los sistemas operativos actuales.<br>
+                                    8.- Baja probabilidad de corrupción de datos.
+                                    9.- Entorno con seguridad y encryptación.</td>
+                                <td  align="justify">1.- Es un sistema de gestión de base de datos.<br>
+                                    2.- Es útil para manejar y obtener datos de la red de redes.<br>
+                                    3.- Nos permite olvidarnos de los ficheros que forman la base de datos.<br>
+                                    4.- Si trabajamos en una red social nos permite agregar otros servidores de SQL Server. Por ejemplo dos personas que trabajan con SQL Server, uno de ellos se puede conectar al servidor de su otro compañero y así se puede ver las bases de datos del otro compañero con SQL Server. <br>
+                                    5.- SQL permite administrar permisos a todo. También  permite que  alguien conecte su SQLO al nuestro pero sin embargo podemos decirle que no puede ver esta base de datos pero otro si.
+                                    </td>
+                              </tr>
+                          <tr>
+                            <tr>
+                                <td align="center">Desventajas</td>
+                                <td>1.- Al ser de Software Libre, muchas de las soluciones para las deficiencias del software no están documentados ni presentan documentación oficial.<br>
+                                    2.- Muchas de sus utilidades tampoco presentan documentación.<br>
+                                    3.- Se debe controlar/monitorizar el rendimiento de las aplicaciones en búsca de fallos.<br>
+                                    4.- No es el más intuitivo de los programas que existen actualmente para todos los tipos de desarrollos.<br>
+                                    5.- No es tan eficaz en aplicaciones que requieran de una constante modificación de escritura en BD.</td>
+                                <td align="justify">1.- Utiliza mucho la memoria RAM  para las instalaciones y utilización de software. <br>
+                                    2.- No se puede utilizar como practicas porque se prohíben muchas cosas, tiene restricciones en lo particular. <br>
+                                    3.- La relación, calidad y el precio esta muy debajo comparado con oracle. <br>
+                                    4.- Tiene muchos bloqueos a nivel de página, un tamaño de página fijo y demasiado pequeño, una pésima implementación de los tipos de datos variables.</td>
+                              </tr>
+                          <tr>
+                            <td align="center">Costo.</td>
+                            <td>Libre y suscripción con soporte.</td>
+                            <td>De pago.</td>
+                          </tr>
+                          <tr>
+                            <td align="center">Open Source.</td>
+                            <td>Si.</td>
+                            <td>No.</td>
+                          </tr>
+                          <tr>
+                            <td align="center">Plataformas.</td>
+                            <td>Linux, Windows y muchas otras.</td>
+                            <td>Sólo Windows.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Limite de tamaño de la base de datos.</td>
+                            <td>Limitado por el sistema operativo.</td>
+                            <td>Limitado por el sistema operativo.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Compatibilidad ACID.</td>
+                            <td>Depende del motor de almacenamiento.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Transacciones.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Servicio de reportes.</td>
+                            <td>No.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Posibilidad de elegir diferentes formas de almacenamiento.</td>
+                            <td>Si.</td>
+                            <td>No.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Claves Foráneas (Foreign Keys).</td>
+                            <td>Depende del motor.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Vistas.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Procedimientos almacenados.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Triggers.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Cursores.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Sub consultas.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Replicación.</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Funciones definidas por el usuario (UDF).</td>
+                            <td>Si.</td>
+                            <td>Si.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">Lenguajes.</td>
+                            <td>1.- Ada <br>
+                                2.- C <br>
+                                3.- C# <br>
+                                4.- C++ <br>
+                                5.- D <br>
+                                6.- Delphi <br>
+                                7.- Eiffel <br>
+                                8.- Erlang <br>
+                                9.- Haskell <br>
+                                10.- Java <br>
+                                11.- JavaScript (Node.js) <br>
+                                12.- Objective-C <br>
+                                13.- OCaml <br>
+                                14.- Perl <br>
+                                15.- PHP <br>
+                                16.- Python <br>
+                                17.- Ruby <br>
+                                18.- Scheme <br>
+                                19.- Tcl</td>
+                            <td>1.- C#<br>
+                                2.- C++<br>
+                                3.- Delphi<br>
+                                4.- Go<br>
+                                5.- Java<br>
+                                6.- JavaScript (Node.js)<br>
+                                7.- PHP<br>
+                                8.- Python<br>
+                                9.- R<br>
+                                10.- Ruby<br>
+                                11.- Visual Basic</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                  </table>
+                <br>
+            </div>
+    </header>
+</body>
+
+</html>

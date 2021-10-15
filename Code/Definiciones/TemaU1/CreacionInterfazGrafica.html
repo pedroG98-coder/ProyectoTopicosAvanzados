@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.1 Creación de Interfaz Gráfica para Usuarios</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">¿Qué es una interfaz de usuario?</h2>
+                <img src="/Img/Unidad1/IMG1.jpg" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <br>
+                <p align="justify" class="text"> La interfaz gráfica de usuario, conocida también como GUI (del inglés
+                    graphical user interface) es un programa informático que actúa de interfaz de usuario, utilizando un
+                    conjunto de imágenes y objetos gráficos para representar la información y acciones disponibles en la
+                    interfaz. Su principal uso, consiste en proporcionar un entorno visual sencillo para permitir la
+                    comunicación con el sistema operativo de una máquina o computador. Una interfaz es un dispositivo
+                    que permite comunicar dos sistemas que no hablan el mismo lenguaje. Restringido a aspectos técnicos,
+                    se emplea el término interfaz para definir el juego de conexiones y dispositivos interfaz que hacen
+                    posible la comunicación entre dos sistemas. Sin embargo, cuando aquí hablamos de interfaz nos
+                    referimos a la cara visible de los programas tal y como se presenta a los usuarios para que
+                    interactúen con la máquina. La interfaz gráfica implica la presencia de un monitor de ordenador o
+                    pantalla constituida por una serie de menús e iconos que representan las opciones que el usuario
+                    puede tomar dentro del sistema.</p>
+                <h2 class="card-title">Creación de Interfaz Gráfica para Usuarios</h2>
+                <p align="justify" class="text">Si un ser humano quiere interactuar con una máquina necesita un medio
+                    para poder hacerlo. Ese medio es, precisamente, lo que se conoce como interfaz de usuario; la parte
+                    del sistema que interactúa con el usuario. La interfaz es un lugar de encuentro entre los bits y las
+                    personas.
+                    La interfaz es la parte visible de las aplicaciones, siendo lo que se percibe de las mismas; por
+                    ello, cada vez se les está dando una importancia mayor y se está poniendo más cuidado en su
+                    desarrollo. La creación de interfaces de usuario es un área, dentro del desarrollo de software, que
+                    ha evolucionado mucho en los últimos años y lo sigue haciendo a día de hoy. Se podría decir que la
+                    interfaz de usuario es lo primero que se juzga de una aplicación, y si no tiene la calidad adecuada
+                    puede producir rechazo por parte del usuario.
+                    Una interfaz puede incluso poner limitaciones en la comunicación de la máquina con el usuario. Todo
+                    aquello que no se pueda expresar a través de la interfaz se perderá, por ello, tiene gran
+                    importancia dentro del desarrollo de una aplicación el diseño de su interfaz. Un buen programa con
+                    una interfaz pobre y no adaptada a las tareas a realizar, no sirve de mucho, ya que la interfaz será
+                    más una barrera que un medio que facilite la interacción.
+                    Hay que tener siempre presente que la interfaz de usuario determina la habilidad de la aplicación.
+                    La habilidad es una medida de uso de un producto por determinados usuarios, con el fin de alcanzar
+                    ciertos objetivos de eficiencia, efectividad y satisfacción, todo ello dentro de un contexto de uso
+                    concreto. (Tópicos Avanzados programación.)
+                    Por lo tanto, la interfaz de usuario debe ser usable, lo que implicará que el usuario consiga
+                    realizar las tareas por medio de ella de forma rápida y sencilla, y se encuentre cómodo con la
+                    aplicación. Una interfaz gráfica de usuario (GUI) es una interfaz de usuario en la que se hace uso
+                    de un entorno gráfico.
+                    C# proporciona los elementos básicos para construir decentes interfaces de usuario.
+                </p>
+                <img src="/Img/Unidad1/IMG2.jpg" width="500px" heigth="500px" align="center" class="imag" alt="...">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

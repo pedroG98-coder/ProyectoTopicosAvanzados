@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2 Uso de Librerías Proporcionadas por el Lenguaje</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Uso de Librerías Proporcionadas por el Lenguaje.</h2>
+                <img src="/Img/Unidad1/IMG9.png" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <br>
+                <p align="justify" class="text">Un componente desde el punto de vista de programación está compuesto por
+                    varias secciones
+                    y el conjunto de todas ellas dan lugar a la creación de dicho componente. Por tanto, primero
+                    para no perder el norte, vamos a empezar definiendo el convenio que es utilizado
+                    para organizar dichas secciones por TinyOs.</p>
+                <p align="justify" class="text">En general, un componente posee tres grandes secciones que son:
+                    Configuración, Implementación, Module. Estas tres secciones han de estar obligatoriamente presentes
+                    en cualquier componente, aunque puedan estar vacías. El estándar de TinyOs determina, que las
+                    secciones de Configuración e Implementación han de ir en un fichero que recibirá el nombre del
+                    componente con la extensión. y la tercera sección de Module deberá de ir en otro fichero aparte que
+                    recibirá el nombre del componente concatenado con un M mayúscula (la M da el significado al fichero,
+                    es el significado de Module), este último fichero también poseerá extensión. Otra buena costumbre
+                    consiste en crear un fichero de header o cabecera con extensión. que contenga todas las
+                    enumeraciones, registros o tipos de datos creados por el usuario de los que hace uso la aplicación,
+                    y cuando se realiza esto la forma de ligar dicho fichero con los otros dos es utilizando al
+                    principio de los otros ficheros la directiva includesheader; aunque como mención especial decir que
+                    si nos fijamos mejor en este directivo se puede ver que no se incorpora la extensión .h en la misma.
+                    Ahora que ya sabes cuales son las secciones que va a contener cada fichero vamos a empezar a
+                    explicar cada una de ellas. Implementación Esta sección se va a encargar de definir las conexiones
+                    que hay entre los diferentes componentes que utiliza la aplicación, esto es debido a que si
+                    recordamos un poco, se ha comentado que la programación de un componente (que se llevará a cabo en
+                    la sección de module) se hace utilizando interfaces y dichas interfaces para poder utilizarlas las
+                    ha de proporcionar un componente, entonces básicamente es esta sección se definen cuáles son los
+                    componentes que proporcionan las interfaces a nuestra aplicación (por lo general serán componentes
+                    primitivos). Una vez que conocemos la finalidad de esta sección y llegados a este punto, vamos a
+                    insertar un concepto nuevo que es la diferencia que existe entre una aplicación que está ya
+                    disponible para ser ejecutada en un sensor y un componente cualquiera.
+                </p>
+                <p align="justify" class="text">La diferencia es muy poca, y consiste en que una aplicación es un
+                    componente como cualquier cosa en este lenguaje que en su sección de implementación hace uso de un
+                    componente especial denominado Main.</p>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3 Juego Galaga</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+     <!--Librerias -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai.min.css"
+     integrity="sha512-RLF8eOxhuwsRINc7r56dpl9a3VStqrXD+udWahutJrYdyh++2Ghnf+s4jFsOyryKZt/GNjPwbXVPH3MJpKrn2g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title" align="center">Práctica:"Juego Galaga"</h2>
+                <h2>Solución de la Actividad 1</h2>
+                <p align="justify" class="text">• Tendremos que crear un nuevo proyecto de visual studio, escogemos la
+                    plantilla de “Aplicación
+                    de Windows Forms (.Net Framework)”.
+                </p>
+                <p align="justify" class="text">• Una vez creado colocaremos los elementos necesarios para llevar a cabo
+                    esta práctica, los
+                    cuales son:
+                </p>
+                <p align="justify" class="text">• 2 ProgressBar, uno para tu personaje y otro para el enemigo.</p>
+                <p align="justify" class="text">• 2 PictureBox, uno para tu personaje y otro para el enemigo.</p>
+                <p align="justify" class="text">• 1 FlowLayoutPanel.</p>
+                <p align="justify" class="text">• 2 label, para identificar la vida de cada personaje</p>
+                <p align="justify" class="text">• Recuerda que para agregar estos componentes tendrás que dirigirte al
+                    apartado de “Cuadro
+                    de herramientas.”</p>
+                <p align="justify" class="text">• Una vez colocados los elementos podrá modificar sus propiedades, tales
+                    que los Picturebox
+                    colocaremos imágenes para hacer más llamativo el juego, para eso daremos clic al elemento
+                    PictureBox y en el apartado de propiedades nos dirigiremos a la sección de imagen, daremos
+                    clic y seleccionaremos una imagen que deseamos poner, ejemplo:</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct3/Img1.png" width="300px" heigth="300px" class="image">
+                <p align="justify" class="text">• Lo mismo haremos para la nave enemiga, lo recomendable es colocar una
+                    imagen en formato
+                    png para que se vea lo mejor posible.</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct3/Img2.png" width="300px" heigth="300px" class="image">
+                <p align="justify" class="text">• También al formulario colocaremos un evento llamado KeyPress el cual
+                    nos servirá para poder
+                    mover el personaje dentro del formulario. Nos dirigiremos al apartado de propiedades y
+                    daremos clic al rayo, buscaremos el veneto KeyPress y daremos doble clic para crear el evento.</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct3/Img3.png" width="300px" heigth="300px" class="image">
+                <p align="justify" class="text">• Ahora procederemos a programar la lógica del juego, daremos clic
+                    derecho dentro del
+                    formulario y seleccionaremos ver código o en su defecto F7.</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct3/Img4.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Colocaremos algunas variables que nos servirán para guardar la
+                    posición del personaje y de la
+                    nave, la vida de los personajes, etc. También crearemos los hilos correspondientes para cada
+                    personaje para que puedan disparar, moverse y generar las balas.</p>
+                <p align="justify" class="text">• Crearemos un método el cual generara las balas automáticamente. Codigo
+                    correspondiente:</p>
+               <!--Formulario Codigo-->
+               <pre>
+                <code class="cs">
+public void m_agregar(Control c)
+            {
+                     if (this.InvokeRequired)
+                     {
+                        d_agregar da = new d_agregar(m_agregar);
+                        object[] pars = new object[] { c };
+                        this.Invoke(da, pars);
+                     }
+                        else
+                     {
+                        if (c is PictureBox)
+                     {
+                        c.Size = new Size(10, 15);
+                        c.BackColor = Color.Red;
+                        this.Controls.Add(c);
+            }
+      }
+}   
+                </code>
+            </pre>
+                <p align="justify" class="text">• Dicho método permitirá generar las balas tonto del personaje como el
+                    de la nave enemiga,
+                    también generamos un picturBox el cual tiene como tamaño 1 0 y 15 y sera de color rojo.</p>
+                <p align="justify" class="text">• Ahora crearemos un método que hará desaparecer las balas al momento de
+                    desaparecer de la
+                    visión del jugador. Código correspondiente.</p>
+               <!--Formulario Codigo-->
+               <pre>
+                <code class="cs">
+public void m_desapareser(Control c)
+            {
+                 if (this.InvokeRequired)
+            {
+                 d_desapareser dd = new d_desapareser(m_desapareser);
+                 object[] pars = new object[] { c };
+                 this.Invoke(dd, pars);
+                    
+            }
+                 else
+            {
+                 c.Dispose();
+    }
+} 
+                </code>
+            </pre>
+                <p align="justify" class="text">• Crearemos un método el cual permitirá que disparen los personajes.
+                    Código correspondiente.</p>
+                  <!--Formulario Codigo-->
+                  <pre>
+                    <code class="cs">
+public void m_disparar(PictureBox p, int x, int y)
+        {
+            if (this.InvokeRequired)
+        {
+            d_disparar dd = new d_disparar(m_disparar);
+            object[] pars = new object[] { p, x, y };
+            this.Invoke(dd, pars);
+        }
+            else
+        {
+            p.Location = new Point(x, y);
+    }
+}     
+                    </code>
+                </pre>
+                <p align="justify" class="text">• Si pudiste darte cuenta los métodos son muy parecidos ya que lo que
+                    hacen es generar objetos
+                    y guardarlos en variables temporales para poder así utilizarlos en métodos que crearemos más
+                    adelante.</p>
+                <p align="justify" class="text">• El siguiente método es el que hará que nuestro personaje pueda
+                    disparar. Código
+                    correspondiente.</p>
+                      <!--Formulario Codigo-->
+                      <pre>
+                        <code class="cs">
+public void disparar()
+        {
+            int x = this.pictureBox1.Location.X + (this.pictureBox1.Width / 2);
+            int y = this.pictureBox1.Location.Y;
+            PictureBox p = new PictureBox();
+            m_agregar(p);
+            while (y >= 0)
+                {
+                    m_disparar(p, x, y);
+                    Thread.Sleep(20);
+                    y -= 5;
+                    if (p.Bounds.IntersectsWith(this.pictureBox2.Bounds))
+                    {
+                        VidadEnemigo();
+                        break;
+                    }
+                }
+                m_desapareser(p);
+        } 
+}
+                        </code>
+                    </pre>
+                <p align="justify" class="text">• Creamos variables que guarden la posición de nuestro personaje,
+                    mandamos a llamar el
+                    método m_agragar y dentro del ciclo llamamos el método m_disparar creados anteriormente,
+                    colocamos la velocidad a la cual deseamos que se mueva la bala y cada cuantos pixeles
+                    queremos que se mueva, también creamos una condición que al momento de que la bala
+                    choque con la nave enemiga llame a un método llamado vidadEnemigo para que baje su vida,
+                    por ultimo invocamos el método m_desaparecer que es el encargado de eliminar la bala para
+                    que no consuma mucha memoria el programa.</p>
+                <p align="justify" class="text">• Crearemos el método para que la nave pueda disparar. Código
+                    correspondiente:</p>
+                          <!--Formulario Codigo-->
+                          <pre>
+                            <code class="cs">
+public void disparar2()
+            {
+                while (true) 
+                {
+                    int x = this.pictureBox2.Location.X + (this.pictureBox2.Width / 2);
+                    int y = this.pictureBox2.Location.Y;
+                    PictureBox p = new PictureBox();
+                    m_agregar(p);
+                    while (y <= 450)
+                    {
+                        m_disparar(p, x, y);
+                        Thread.Sleep(25);
+                        y += 5;
+                        if (p.Bounds.IntersectsWith(this.pictureBox1.Bounds))
+                        {
+                            VidadPersonajes();
+                            break;
+                        }
+                    }
+             m_desapareser(p);
+        }
+}                                
+                            </code>
+                        </pre>
+                <p align="justify" class="text">• Es prácticamente lo mismo que hicimos con el método anterior solo que
+                    este estará dirigido a
+                    la nave enemiga, lo único que cambia es en el ciclo, la posición de donde saldrá la bala será
+                    en 450.</p>
+                <p align="justify" class="text">• Creamos el método que harán que nos quite vida al momento de que nos
+                    de una bala. Código
+                    correspondiente:</p>
+                  <!--Formulario Codigo-->
+                  <pre>
+                    <code class="cs">
+public void VidadEnemigo()
+            {
+                 if (this.InvokeRequired)
+                 {
+                    d_vidas dv = new d_vidas(VidadEnemigo);
+                    this.Invoke(dv);
+                 }
+                    else
+                 {
+                    if (hacerDaño)
+                    {
+                    pbVidaEnemigo.Value -= 10;
+                    }
+                    if (pbVidaEnemigo.Value == 0)
+                    {
+                        hacerDaño = false;
+                        FinDeJuego();
+                        if (mover)
+                    {
+                        mover = false;
+                        MessageBox.Show("Felicidades has Ganado");
+                    }
+            }
+      }
+}
+public void VidadPersonajes()
+            {
+                if (this.InvokeRequired)
+                {
+                    d_vidas dv = new d_vidas(VidadPersonajes);
+                    this.Invoke(dv);
+                }
+                    else
+                {
+                    if (hacerDaño)
+                    {
+                        pbVidaPersonaje.Value -= 10;
+                    }
+                        if (pbVidaPersonaje.Value == 0)
+                    {
+                        hacerDaño = false;
+                        FinDeJuego();
+                        if (mover)
+                    {
+                        mover = false;
+                        MessageBox.Show("FIn de el Juego \n Has perdido");
+                    }
+             }
+      }
+}      
+                    </code>
+                </pre>
+                <p align="justify" class="text">• En los métodos indicamos cuanta vida queremos que nos quite cada bala
+                    también colocamos
+                    los mensajes que nos saldrán si perdemos o ganamos la partida.</p>
+                <p align="justify" class="text">• Es necesario crear otros dos delegados que permitan el movimiento de
+                    los personajes, para
+                    eso crearemos lo siguiente:</p>
+                   <!--Formulario Codigo-->
+                   <pre>
+                    <code class="cs">
+public void delegado_moverPersonaje(int x, int y)
+            {
+                if (this.InvokeRequired)
+                {
+                    d_MovePers a = new d_MovePers(delegado_moverPersonaje);
+                    object[] par = new object[] { x, y };
+                    this.Invoke(a, par);
+                }
+                else
+                {
+                    this.pictureBox1.Location = new Point(x, y);
+                }
+           } 
+public void delegado_moverEnemigo(int x, int y)
+           {
+                if (this.InvokeRequired)
+                {
+                    d_MovePers a = new d_MovePers(delegado_moverEnemigo);
+                    object[] par = new object[] { x, y };
+                    this.Invoke(a, par);
+                }
+                else
+                {
+                    this.pictureBox2.Location = new Point(x, y);
+                }
+           }          
+                    </code>
+                </pre>
+                <p align="justify" class="text">• Ahora crearemos los métodos que usaran los delegados previamente
+                    creados. Código
+                    correspondiente.</p>
+                      <!--Formulario Codigo-->
+                      <pre>
+                        <code class="cs">
+public void metodo_moverPersonaje()
+            {
+                if (MoDerecha)
+                {
+                    PMovPerX -= 5;
+                    this.delegado_moverPersonaje(PMovPerX, PMovPerY);
+                }
+                else if (MoIzquierda)
+                {
+                    PMovPerX += 5;
+                    this.delegado_moverPersonaje(PMovPerX, PMovPerY);
+                }
+                    MoDerecha = false;
+                    MoIzquierda = false;
+            }
+public void M_MoverEnemigo()
+            {
+                int x = pictureBox2.Location.X;
+                while (true)
+                {
+                     if (bandera)
+                {
+                    this.delegado_moverEnemigo(x, 50);
+                    Thread.Sleep(50);
+                    x -= 5;
+                    if (x ==0)
+                {
+                    bandera = false;
+                }
+            }
+            else
+            {
+                    this.delegado_moverEnemigo(x, 50);
+                    Thread.Sleep(50);
+                    x += 5;
+                    if (x == 260)
+                    {
+                        bandera = true;
+                }
+        }
+} 
+                        </code>
+                    </pre>
+                <p align="justify" class="text">• El método_moverPersonaje indica cuantos pixeles se moverá el personaje
+                    cada que
+                    presionemos una tecla y de igual manera el método M_Mover_Enemigo hace lo mismo, solo
+                    que este se moverá de manera automática e indicamos cada cuanto tiempo queremos que se
+                    mueva.</p>
+                <p align="justify" class="text">• Por último, el evento antes creado llamado keyPress lo usaremos para
+                    colocar las letras con
+                    las cuales deseamos movernos y con cual tecla dispara. Código correspondiente:</p>
+                         <!--Formulario Codigo-->
+                         <pre>
+                            <code class="cs">
+private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+            {
+                if (mover)
+                {
+                    if (e.KeyChar == (char)Keys.Space)
+                    {
+                        Thread t = new Thread(disparar);
+                        t.Start();
+                    }
+                    else
+                    if (e.KeyChar == 'a')
+                    {
+                        MoDerecha = true;
+                        Thread hiloPer = new Thread(metodo_moverPersonaje);
+                        hiloPer.Start();
+                    }
+                        else if (e.KeyChar == 'd')
+                    {
+                        MoIzquierda = true;
+                        hiloPer = new Thread(metodo_moverPersonaje);
+                        hiloPer.Start();
+                    }
+        }   
+}       
+                            </code>
+                        </pre>
+                <p align="justify" class="text">• Ya para finalizar iniciaremos los hilos correspondientes para que
+                    funcione nuestro juego.</p>
+                <p align="justify" class="text">• Estos hilos se iniciarán dentro del form1. Código correspondiente:</p>
+                           <!--Formulario Codigo-->
+                           <pre>
+                            <code class="cs">
+public Form1()
+     {
+            InitializeComponent();
+            t = new Thread(disparar2);
+            t.Start();
+            t2 = new Thread(M_MoverEnemigo);
+            t2.Start();
+     }  
+                            </code>
+                        </pre>
+                <p align="justify" class="text">• Solo queda ejecutar nuestro programa y disfrutar de nuestro primer
+                    juego creado con diversos
+                    hilos.</p>
+
+                <h2 class="card-title" align="center">Resultado Final Actividad 3</h2>
+                <img src="/Img/Practicas/PracticaU3/ImgAct3/ImgResultado.png" width="500px" heigth="500px"
+                    class="imag">
+                <br>
+                <br>
+            </div>
+    </header>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

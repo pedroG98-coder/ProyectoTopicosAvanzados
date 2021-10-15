@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.3 Manejo de Eventos</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Manejo de Eventos</h2>
+                <h2 class="card-title" align="center">Que es un Evento.</h2>
+                <img src="/Img/Unidad1/IMG5.png" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <br>
+                <p align="justify" class="text"> Un evento es un mensaje que envía un objeto cuando ocurre una acción.
+                    La acción podría
+                    deberse a la interacción del usuario, como hacer clic en un botón, o podría derivarse de
+                    cualquier otra lógica del programa, como el cambio del valor de una propiedad. El objeto que
+                    provoca el evento se conoce como emisor del evento. El emisor del evento no sabe qué objeto
+                    o método recibirá (controlará) los eventos que genera. El evento normalmente es un miembro
+                    del emisor del evento; por ejemplo, el evento Clic es un miembro de la clase Button, y el evento
+                    PropertyChanged es un miembro de la clase que implementa la interfaz
+                    INotifyPropertyChanged.
+                </p>
+                <img src="/Img/Unidad1/IMG3.jpg" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <h2 class="card-title">Controladores de Eventos.</h2>
+                <p align="justify" class="text">Para responder a un evento, se define un método controlador de eventos
+                    en el receptor de
+                    eventos. Este método debe coincidir con la signatura del delegado del evento que se está
+                    controlando. En el controlador de eventos, se realizan las acciones que es necesario llevar a
+                    cabo cuando se genera el evento, como recopilar los datos proporcionados por el usuario
+                    cuando este hace clic en un botón. Para recibir notificaciones cuando se genera el evento, el
+                    método controlador de eventos debe suscribirse al evento.
+                </p>
+                <h2 class="card-title">¿Dónde utilizar los eventos?</h2>
+                <p align="justify" class="text">1. La implementación más común de eventos se presenta en aplicaciones
+                    visuales.
+                </p>
+                <p align="justify" class="text">2. Las clases de los controles de la interfaz gráfica disponen de
+                    eventos que se notifican cuando el usuario realiza alguna actividad con el control (como hacer clic
+                    en algún botón de la forma).
+                </p>
+                <p align="justify" class="text">3. Los eventos no son exclusivos para las aplicaciones visuales, ya que
+                    una aplicación de consola puede tener clases que disponen de eventos, además que el programador
+                    puede diseñar sus propios eventos.
+                </p>
+                <h2 class="card-title">Parámetros</h2>
+                <table class="table table-dark table-xl">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Parámetro</th>
+                            <th scope="col">Detalles</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th class="table-primary" scope="row">1</th>
+                            <td class="table-primary"><b>EventArgsT</b></td>
+                            <td class="table-primary">El tipo que se deriva de EventArgs y contiene los parámetros del 
+                                evento.
+                                </td>
+                          </tr>
+                          <tr>
+                            <th class="table-success" scope="row">2</th>
+                            <td class="table-success "><b>Nombre del Evento</b></td>
+                            <td class="table-success" >El nombre del evento.
+                            </td>
+                          </tr>
+                          <tr>
+                            <th class="table-danger" scope="row">3</th>
+                            <td class="table-danger" ><b>Nombre del Controlador</b></td>
+                            <td class="table-danger" >El nombre del controlador de eventos.</td>
+                          </tr>
+                          <tr>
+                            <th class="table-warning" scope="row">4</th>
+                            <td class="table-warning" ><b>SenderObject</b></td>
+                            <td class="table-warning" >El objeto que invoca el evento.</td>
+                          </tr>
+                          <tr>
+                            <th class="table-info" scope="row">5</th>
+                            <td class="table-info" ><b>EventosArgumentos</b></td>
+                            <td class="table-info" >Una instancia del tipo EventArgsT que contiene los parámetros del 
+                                evento.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </table>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

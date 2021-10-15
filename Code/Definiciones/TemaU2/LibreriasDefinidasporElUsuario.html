@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.4 Creación y uso de Paquetes/Librerías definidas por el Usuario.</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Creación y uso de Paquetes/Librerías definidas por el Usuario.</h2>
+                <img src="/Img/Unidad2/LibreriasUsuario.png" width="500px" heigth="500px" class="imag" >
+                <br>
+                <p align="justify" class="text">Se puede establecer muchas clasificaciones para los componentes. Una de
+                    ellas es la de
+                    visuales o controles, frente a no visuales. Un componente es visual cuando tiene una
+                    representación gráfica en tiempo de diseño y ejecución (botones, barras de Crol, cuadros de
+                    edición, etc.), y se dice no visual en caso contrario (temporizadores, cuadros de diálogo-no
+                    visibles en la fase de diseño, etc.). Por lo demás no existen más diferencias entre ellos, excepto,
+                    claro está, las derivadas de la visualización del componente. Los componentes no visuales se
+                    pueden colocar en los formularios de la misma manera que los controles, aunque en este caso
+                    su posición es irrelevante. Para empezar, los componentes visuales podemos dividirlos a su
+                    vez en dos tipos:
+                </p>
+                <p align="justify" class="text"><b><i>Componentes Interactivos: </i></b> Permiten que el usuario final
+                    los manipule, ya sea introduciendo
+                    datos, seleccionado elementos, etc. De forma que estos componentes pueden recibir
+                    el foco (con Sofocas) así como los eventos propios del teclado y del ratón. Normalmente, el
+                    propio sistema operativo es el encargado de dibujar el aspecto del componente, haciendo el
+                    componente las llamadas correspondientes para que este aspecto cambie.
+                </p>
+                <p align="justify" class="text"><b><i>Componentes Gráficos:</i></b> El propio componente es el encargado
+                    de dibujar en la pantalla lo
+                    que crea oportuno, bien a través de las funciones básicas del API de Windows (con el objeto
+                    Tandas) o bien a través de otras librerías gráficas, como OpenGL, DirectX, etc. Estos
+                    componentes, no suelen recibir eventos del usuario final, aunque si eventos del propio
+                    programador, ya que su cometido no suele ir más allá de mostrar ciertos gráficos o imágenes
+                    en la pantalla. Si tuviéramos que crear un componente interactivo desde el principio, sería
+                    demasiado complejo, ya que tendríamos que luchar encontrar el propio API del sistema
+                    operativo, gestionando sus mensajes, las llamadas las funciones a bajo nivel, etc. Sin embargo,
+                    podemos aprovechar la mayoría del trabajo hecho por Borland en la VCL, y crear componentes
+                    interactivos a partir de otros ya existentes, aplicado la técnica de herencia.
+                </p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

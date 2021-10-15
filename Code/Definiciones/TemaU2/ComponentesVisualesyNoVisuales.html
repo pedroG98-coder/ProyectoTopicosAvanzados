@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3 Creación de Componentes (Visuales y No Visuales) Definidos por el Usuario</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Creación de Componentes (Visuales y No Visuales) Definidos por el Usuario.</h2>
+                <img src="/Img/Unidad2/CreacionComponentes.jpg" width="500px" heigth="500px" class="imag" >
+                <br>
+                <p align="justify" class="text">Se puede establecer muchas clasificaciones para los componentes. Una de
+                    ellas es la de visuales o controles, frente a no visuales. Un componente es visual cuando tiene una
+                    representación gráfica en tiempo de diseño y ejecución (botones, barras de scroll, cuadros de
+                    edición, etc.), y se dice no visual en caso contrario (temporizadores, cuadros de diálogo-no
+                    visibles en la fase de diseño, etc). Por lo demás no existen más diferencias entre ellos, excepto,
+                    claro está, las derivadas de la visualización del componente. Los componentes no visuales se pueden
+                    colocar en los formularios de la misma manera que los controles, aunque en este caso su posición es
+                    irrelevante. Para empezar, los componentes visuales podemos dividirlos a su vez en dos tipos:
+                    -Componentes interactivos: permiten que el usuario final los manipule, ya sea introduciendo datos,
+                    seleccionado elementos, etc. De forma que estos componentes pueden recibir el foco (con SetFocus)
+                    así como los eventos propios del teclado y del ratón. Normalmente, el propio sistema operativo es el
+                    encargado de dibujar el aspecto del componente, haciendo el componente las llamadas correspondientes
+                    para que este aspecto cambie. -Componente gráficos: el propio componente es el encargado de dibujar
+                    en la pantalla lo que crea oportuno, bien a través de las funciones básicas del API de Windows (con
+                    el objeto TCanvas) o bien a través de otras librerías gráficas, como OpenGL, DirectX, etc. Estos
+                    componentes, no suelen recibir eventos del usuario final, aunque si eventos del propio programador,
+                    ya que su cometido no suele ir más allá de mostrar ciertos gráficos o imágenes en la pantalla. Si
+                    tuviéramos que crear un componente interactivo desde el principio, sería demasiado complejo, ya que
+                    tendríamos que luchar encontrar el propio API del sistema operativo, gestionando sus mensajes, las
+                    llamadas las funciones a bajo nivel, etc. Sin embargo, podemos aprovechar la mayoría del trabajo
+                    hecho por Borland en la VCL, y crear componentes interactivos a partir de otros ya existentes,
+                    aplicado la técnica de herencia. Dado que un componente es un objeto como otro cualquiera, podremos
+                    aplicar en las todas las técnicas de la orientación a objetos: encapsulación, herencia y
+                    polimorfismo. La encapsulación ya la hemos utilizado sin apenas darnos cuenta, simplemente
+                    definiendo ciertos atributos como privados, para que no puedan ser accedidos desde fuera de la
+                    clase, y otros públicos o publicados (pulished) para ser usados por el programador que utilice el
+                    componente. La herencia nos permite reutilizar código, haciendo que una clase dada (que llamaremos
+                    clase hija) adquirida a todos los atributos y métodos públicos y protegidos de otra, llamada clase
+                    padre. De este método, podemos aprovechar mucho código escrito, simplemente heredando de una clase
+                    ya escrita. Por si fuera poco, también es posible que una clase hijo tenga a su vez mas
+                    descendencia, adquiriendo estos las características del padre y del "padre del padre", es decir: del
+                    abuelo.</p>
+                <p align="justify" class="text">La técnica de la herencia, aplicada a los componentes, nos permite
+                    personalizar cualquier componente, o porque queremos ampliar las posibilidades del componente. La
+                    propia VCL utiliza la herencia continuamente, bien para utilizar código de clases padre, o bien para
+                    ofrecernos clases padre de las que nosotros podemos heredar. Muchas "suites de componentes" hacen
+                    también esto, proporcionando un componente heredando a partir de cada uno de los básicos, y
+                    añadiendo en estas nuevas características. Para explicar cómo crear un componente interactivo, vamos
+                    a hacerlo a través de un ejemplo práctico: supongamos que necesitamos mostrar un árbol que muestre
+                    los directorios a partir de una carpeta dada, incluso pongamos que necesitamos mostrar el típico
+                    árbol de "MI PC", mostrando todas las unidades y las carpetas de cada una. Para ello, podríamos
+                    escribir un componente desde cero, gestionando todo lo referente a la estructura en árbol, el dibujo
+                    en pantalla, la gestión de mensajes,etc. Podríamos utilizar la herencia para utilizar el código ya
+                    escrito, concretamente basándose en el componente ATTreeVienw, que es el que nos permite mostrar en
+                    un formulario estructuras del tipo árbol. Sin embargo, el TTreeVienw que viene por defecto en el
+                    Delphi, es muy genérico, y sirve para mostrar cualquier ripo de árbol. Nuestro caso es más
+                    específico: necesitamos mostrar un árbol, sí, pero más concretamente un árbol de directorios.
+                    Llamaremos a nuestra nueva creación TArbolDirectorios. Sólo vamos a fijarnos a partir TComponent:
+                    TComponent: este nos resulta familiar, ya que es la clase a partir de la que hemos creado en nuestro
+                    conversor de monedas de anteriores números. Los componentes no-visuales deben heredar directamente
+                    de TComponent, ya que este proporciona las características básicas. TControl: se trata de la clase
+                    padre para todos los componentes visuales, ya sean gráficos o no. TWinControl: de esta clase
+                    descenderán todos los componentes dibujados directamente por Windows. La principal característica de
+                    estos objetos (llamados ventanas o Windows) es que están identificados por un número único llamado
+                    descriptor o manejadores de ventana (en inglés handle). TCustomTreeView: se trata de la clase que
+                    permite mostrar un árbol dentro de un formulario de Delphi. La peculiaridad es que esta clase no
+                    contiene ningún método ni propiedad en la sección published, por lo que puedes ser manejada desde el
+                    entorno de Delphi. TTreeView: esta ya es la clase o componente final, que aparece registrado en la
+                    paleta de componentes, y que puede ser configurado en tiempo de diseño. En realidad, todo el trabajo
+                    de esta clase se limita a publicar las propiedades y eventos que han sido programados en la clase
+                    TCustomTreeVienw. Ahora que ya sabemos quíen va a ser el padre de nuestro componente, tenemos que
+                    decir qué propiedades y eventos vamos a proporcionar a nuestros usuarios del componente.
+                    CarpetaRaiz: se trata de una cadena que contendrá la carpeta a partir de que se creará el árbol de
+                    directorios. Puede ser la carpeta raíz de una unidad de disco(p.e."C:\") para mostrar los
+                    directorios de toda la unidad, o bien una carpeta cualquiera, para mostrar las subcarpetas de esta.
+                    Un caso se dará cuando esta propiedad contenga el valor "Mi PC", con en el que mostraremos cada una
+                    de las unidades disponibles en nuestros sistemas, pudiendo expandir estas unidades para mostrar sus
+                    carpetas. CarpetaActual: es el valor de tipo cadena que contiene la ruta de la carpeta seleccionada
+                    en el árbol, por ejemplo. Si, por ejemplo, tenemos seleccionada la carpeta de primer nivel "Datos",
+                    y el nodo raíz es "C:\Temporal", esta propiedad contendrá el valor "C:\Temporal\Datos". También se
+                    puede modificar su valor, seleccionándose en ese caso el modo correspondiente en el árbol (si el
+                    valor establecido es correcto).
+                </p>
+                <p align="justify" class="text">MostrarPadre: es un valor booleano (true o false) que nos permite
+                    configurar la aparición no del nodo padre. Es decir: si en la propiedad "CarpetaRaiz" hemos
+                    introducido el valor "C:\Delphi", en el árbol aparecerá un nodo raíz llamado "Delphi", y colgado de
+                    él, todas las demás subcarpetas. Si establecemos esta propiedad a falso, el nodo raíz desaparecerá,
+                    mostrándose todas las subcarpetas en un primer nivel, sin colgar de ningún nodo padre. Una interfaz
+                    gráfica está construida en base a elementos gráficos básicos, los componentes. Típicos ejemplos de
+                    estos componentes son los botones, barras de desplazamientos, etiquetas, listas, cajas de selección
+                    o campos de textos. Los componentes permiten al usuario a interactuar con la aplicación y
+                    proporcionar información desde el programa al usuario sobre el estado del programa. En el AWT, todos
+                    los componentes de la interfaz de usuario son instancias de la clase componente o uno de sus
+                    subtipos. Los componentes no se encuentran aislados, si no agrupados dentro de contenedores. Los
+                    contenedores contienen y organizan la situación de los componentes y como tales pueden ser situados
+                    dentro de otros contenedores. También contienen el código necesario para el control de eventos,
+                    cambiar la forma del cursor o modificar el icono de la aplicación. En el AWT todos los contenedores
+                    son instancias de la clase Container o uno de sus subtipos. La clase componente es una clase
+                    abstracta que representa todo lo que tiene una posición, un tamaño, puede ser pintado en pantalla y
+                    puede recibir eventos. No tiene constructores públicos, ni puede ser instanciada. Sin embargo, la
+                    clase Component puede ser extendida para proporcionar una nueva característica incorporada a java,
+                    conocida como componentes ligeros o Lightweight. Los objetos derivados de la clase Component que se
+                    incluyen en el abstract window Toolkit son los que aparecen a continuación:</p>
+                    <p align="justify" class="text"><b>•	Button </b></p>
+                    <p align="justify" class="text"><b>•	Canvas</b></p>
+                    <p align="justify" class="text"><b>•	Checkbox </b></p>
+                    <p align="justify" class="text"><b>•	Choice </b></p>
+                    <p align="justify" class="text"><b>•	Container </b></p>
+                    <p align="justify" class="text"><b>•	Panel </b></p>
+                    <p align="justify" class="text"><b>•	Window </b></p>
+                    <p align="justify" class="text"><b>•	Dialog </b></p>
+                    <p align="justify" class="text"><b>•	Frame</b></p>
+                    <p align="justify" class="text"><b>•	Label</b></p>
+                    <p align="justify" class="text"><b>•	List </b></p>
+                    <p align="justify" class="text"><b>•	Scrollbar </b></p>
+                    <p align="justify" class="text"><b>•	TextComponent </b></p>
+                    <p align="justify" class="text"><b>•	TextArea</b></p>
+                    <p align="justify" class="text"><b>•	TextField</b></p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

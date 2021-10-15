@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.3 Calcular Distancia de un Objecto</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title" align="center">Práctica:"Calcular Distancia de un Objecto"</h2>
+                <h2>Solución de la Actividad 3</h2>
+                <p align="justify" class="text">• Crearemos un nuevo proyecto en Visual Studio 2019 de tipo Aplicación
+                    de Windows
+                    Forms (.NET Framework).</p>
+                <p align="justify" class="text">• Le damos un nombre y después clic en crear.</p>
+                <img src="/Img/Practicas/PracticaU1/ImgAct3/Img1.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Aparecerá la siguiente interfaz.</p>
+                <img src="/Img/Practicas/PracticaU1/ImgAct3/Img2.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Ajustamos el tamaño de nuestro Form.</p>
+                <p align="justify" class="text">• Nos dirigimos al apartado de cuadro de herramienta, ubicado en la
+                    parte izquierda y
+                    arrastraremos 4 label.</p>
+                <p align="justify" class="text">• Arrastramos de igual manera 2 TextBox.</p>
+                <p align="justify" class="text">• Por último, un Button.</p>
+                <p align="justify" class="text">• Quedará de la siguiente manera.</p>
+                <img src="/Img/Practicas/PracticaU1/ImgAct3/Img3.png" width="300px" heigth="300px" class="image">
+                <p align="justify" class="text">• Daremos doble clic en el botón.</p>
+                <p align="justify" class="text">• Y colocaremos el siguiente código.</p>
+                 <!--Formulario Codigo-->
+                 <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span>lblResultado.Text = Convert.ToString(d.Distancia(float.Parse(txtVelocidad.Text), 
+                            float.Parse(txtTiempo.Text)));</span>
+                    </div>
+                </div>
+                <p align="justify" class="text">• Obtenemos los valores de los textBox y los convertimos a tipo de dato
+                    float.</p>
+                <p align="justify" class="text">• Llamamos una función llamada distancia la cual hace la operación.</p>
+                <p align="justify" class="text">• Para la creación de la función haremos el siguiente código.</p>
+                 <!--Formulario Codigo-->
+                 <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span>public float Distancia(float velocidad, float tiempo)</span>
+                        <br>
+                        <span>{</span>
+                        <br>
+                        <span>return velocidad * tiempo;</span>
+                        <br>
+                        <span>}</span>
+                    </div>
+                </div>
+                <p align="justify" class="text">• La función solo multiplica los valores de velocidad y tiempo.</p>
+                <p align="justify" class="text">• Quedará de la siguiente manera.</p>
+                <img src="/Img/Practicas/PracticaU1/ImgAct3/Img4.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Ejecutamos el proyecto y listo </p>
+                <h2 class="card-title" align="center">Resultado de la Actividad 3</h2>
+                <img src="/Img/Practicas/PracticaU1/ImgAct3/Img5.png" width="300px" heigth="300px" class="image">
+                <br>
+            </div>
+    </header>
+</body>
+
+</html>

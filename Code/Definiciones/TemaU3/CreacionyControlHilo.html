@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.3 Creación y Control de Hilos</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Creación y Control de Hilos.</h2>
+                <img src="/Img/Unidad3/IMG3.gif" width="500px" heigth="500px" class="imag">
+                <br>
+                <p align="justify" class="text">Si no estás familiarizado con profundos conocimientos de programación,
+                    tal vez tengas la idea de la ejecución secuencial del código fuente de un programa, es decir, que
+                    las líneas de código fuente se van ejecutando de una manera lineal de principio a fin, aunque
+                    realmente esto no sea así pues la compilación del código fuente en el entorno .NET es algo más
+                    complicada que eso.
+                </p>
+                <p align="justify" class="text">Sin embargo, y teniendo en cuenta el funcionamiento de la compilación de
+                    .NET, es el momento de que comiences a pensar en algo más que la idea de ejecución secuencial del
+                    código fuente. Mediante la programación multihilo es posible que la ejecución del código fuente vaya
+                    por dos o más puntos diferentes, independientes entre sí, además de una línea secuencial de
+                    ejecución primaria. De esta forma, es posible la realización de diferentes tareas en un mismo
+                    tiempo, consiguiendo de esta manera una optimización de los tiempos de trabajo de la CPU. Sin
+                    embargo, esto no quiere decir que la CPU trabaje en varias tareas al mismo tiempo, pues no tiene
+                    capacidad para ello. En su lugar, la CPU asigna a cada tarea diferentes tiempos de ejecución en
+                    función de su importancia, facilitando así el uso del desarrollo asíncrono.
+                </p>
+                <p align="justify" class="text">Un ejemplo de ello sería una aplicación cualquiera que tuviera una
+                    visualización de formularios que serían controlados por el hilo principal de ejecución, pero que
+                    conforme el usuario trabaje en estos formularios, la aplicación deba guardar los datos introducidos
+                    en, por ejemplo, unas bases de datos. Las operaciones sobre las bases de datos podrán ser cedidas a
+                    otros hilos, de manera que, si estas operaciones requieren tiempos amplios para su ejecución, el
+                    usuario no notará interrupciones en la ejecución del hilo principal y podrá seguir haciendo uso
+                    normal de la aplicación sin darse cuenta de las complejas operaciones que se estén desarrollando en
+                    segundo plano.
+                </p>
+                <p align="justify" class="text">Para el desarrollo de tareas multihilo se hace uso del espacio de
+                    nombres 'System.Threading', el cual alberga clases que permiten crear y conrtolar tareas,
+                    principalmente mediante la clase 'Thread'.
+                </p>
+                <h2 class="card-title">Creación de un Hilo.</h2>
+                <p align="justify" class="text">Para la creación de un hilo se hace uso del delegado 'ThreadStart', que
+                    tomará como argumento de su constructor el nombre del método que será ejecutado por el nuevo hilo, y
+                    este delegado se pasará a continuación como argumento del constructor del objeto 'Thread'.
+                    Finalmente llamaremos al método 'Start' del objeto 'Thread' para iniciar la llamada al métod del
+                    delegado 'ThreadStart':
+                </p>
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span class="sourceCodeGreen">ThreadStart</span>
+                        <span class="sourceCodeWhite">newThread = </span>
+                        <span class="sourceCodeBlue">new</span>
+                        <span class="sourceCodeGreen">ThreadStart</span>
+                        <span class="sourceCodeWhite">(OtherThread);</span>
+                        <br>
+                        <span class="sourceCodeGreen">Thread</span>
+                        <span class="sourceCodeWhite">thread =</span>
+                        <span class="sourceCodeBlue">new</span>
+                        <span class="sourceCodeGreen">Thread</span>
+                        <span class="sourceCodeWhite">(newThread);</span>
+                        <br>
+                        <span class="sourceCodeWhite">thread.Start();</span>
+                    </div>
+                </div>
+                <p align="justify" class="text"><b>Vemos ahora un ejemplo de lo anterior dentro de una aplicación de
+                        consola:</b>
+                </p>
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span class="sourceCodeBlue">using</span>
+                        <span class="sourceCodeWhite">System;</span>
+                        <br>
+                        <span class="sourceCodeBlue">using</span>
+                        <span class="sourceCodeWhite">System.Threading;</span>
+                        <br>
+                        <span class="sourceCodeBlue">public static void</span>
+                        <span class="sourceCodeWhite">Main()</span>
+                        <br>
+                        <span class="sourceCodeWhite">{</span>
+                        <br>
+                        <span class="sourceCodeGreen">Console</span>
+                        <span class="sourceCodeWhite">.WriteLine</span>
+                        <span class="sourceCodeWhite">(</span><span class="sourceCodeRed">"Inicio del hilo
+                            principal."</span>
+                        <span class="sourceCodeWhite">);</span>
+                        <br>
+                        <span class="sourceCodeGreen">ThreadStart </span>
+                        <span class="sourceCodeWhite">newThread = </span>
+                        <span class="sourceCodeBlue">new</span>
+                        <span class="sourceCodeGreen">ThreadStart </span>
+                        <span class="sourceCodeWhite">(OtherThread);</span>
+                        <br>
+                        <span class="sourceCodeGreen">Thread </span>
+                        <span class="sourceCodeWhite">thread = </span>
+                        <span class="sourceCodeBlue">new</span>
+                        <span class="sourceCodeGreen">Thread </span>
+                        <span class="sourceCodeWhite">(newThread);</span>
+                        <br>
+                        <span class="sourceCodeWhite">thread.Start();</span>
+                        <br>
+                        <span class="sourceCodeGreen">Console</span>
+                        <span class="sourceCodeWhite">.WriteLine(</span>
+                        <span class="sourceCodeRed">"Fin del hilo principal."</span>
+                        <span class="sourceCodeWhite">);</span>
+                        <br>
+                        <span class="sourceCodeWhite">}</span>
+                        <br>
+                        <span class="sourceCodeBlue">public static void</span>
+                        <span class="sourceCodeWhite">OtherThread()</span>
+                        <br>
+                        <span class="sourceCodeWhite">{</span>
+                        <br>
+                        <span class="sourceCodeGreen">Console</span>
+                        <span class="sourceCodeWhite">.WriteLine(</span>
+                        <span class="sourceCodeRed">"Inicio del hilo secundario."</span>
+                        <span class="sourceCodeWhite">);</span>
+                        <br>
+                        <span class="sourceCodeGreen">Console</span>
+                        <span class="sourceCodeWhite">.WriteLine(</span>
+                        <span class="sourceCodeRed">"Fin del hilo secundario."</span>
+                        <span class="sourceCodeWhite">);</span>
+                        <br>
+                        <span class="sourceCodeWhite">}</span>
+                    </div>
+                </div>
+                <p align="justify" class="text">Si compilas y ejecutas la aplicación, observarás que la salida por la
+                    consola muestra las cadenas de texto de inicio del hilo principal, fin del hilo principal, inicio
+                    del hilo secundario y fin del hilo secundario, exactamente por ese orden. De esto se deduce que tras
+                    inicial el hilo principal de la aplicación, se hace la llamada al hilo secundario y éste se ejecuta
+                    hasta su fin independientemente de que el hilo principal haya finalizado, de manera asíncrona e
+                    independiente. Puedes experimentar con esta aplicación sacando por la consola el valor de la
+                    propiedad estática 'CurrentThread' del objeto de la clase 'Thread' creado y comprobarás que ésta no
+                    tiene el mismo valor según el médodo en ejecución en cada momento.</p>
+                <h2 class="card-title">Suspender o anular un Hilo.</h2>
+                <p align="justify" class="text">Ahora no se te ocurrirá ningún ejemplo claro, pero cuando comiences a
+                    trabajar con hilos en tus aplicaciones, te dartás cuenta de que por alguna razón necesitas pausar un
+                    hilo cuando éste se está ejecutando. Esto se consigue de la siguiente manera tan simple:</p>
+                </p>
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span class="sourceCodeGreen">Thread</span>
+                        <span class="sourceCodeWhite">.Sleep(5000);</span>
+                    </div>
+                </div>
+                <p align="justify" class="text">Con esta sentencia lo que se consigue es pausar (o suspender) el hilo
+                    actual durante 5000 milisegundos, que es el valor que se ha pasado al constructor del método 'Sleep'
+                    de la clase 'Thread'.</p>
+                <p align="justify" class="text">Para abortar un hilo, es decir, para finalizar la ejecución de un hilo
+                    que se encuentra activo, se hace una llamada al método 'Abort':</p>
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <span class="sourceCodeWhite">thread.Abort();</span>
+                    </div>
+                </div>
+                <p align="justify" class="text">Con esta sentencia finalizaremos el hilo secundario que habíamos creado
+                    anteriormente en la aplicación de consola. Es de mucha ayuda que este método lo podremos llamar
+                    desde el hilo principal o desde el método que ejecuta el hilo secundario.</p>
+                </p>
+                <h2 class="card-title">Prioridad de los hilos.</h2>
+                <p align="justify" class="text">De manera predeterminada, la prioridad de un hilo es normal, es decir,
+                    que todos los hilos creados se ejecutarán con la misma prioridad. Sin embargo, afortunadamente, C#
+                    nos permite cambiar estas condiciones mediante la propiedad 'Priority' de la clase 'Thread' con
+                    cualquiera de sus valores establecidos en la enumeración 'ThreadPriority': 'Highest',
+                    'AboveNormal','Normal', 'BelowNormal' y 'Lowest'.</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

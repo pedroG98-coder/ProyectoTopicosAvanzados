@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.4 Sincronización de Hilos Computación</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Sincronización de Hilos Computación.</h2>
+                <p align="justify" class="text">La sincronización de hilos consiste en asegurar que distintos hilos
+                    accedan de modo coordinado a recursos compartidos.
+                </p>
+                <p align="justify" class="text">El caso más sencillo es la sincronización del uso del procesador, lo
+                    cual se lleva a cabo por el sistema operativo mediante la “multitarea preventiva” (“rodajas de
+                    tiempo”).
+                </p>
+                <p align="justify" class="text">Pero existen otras situaciones en las que la sincronización es necesaria
+                    y no la hace por defecto el sistema operativo.
+                </p>
+                <img src="/Img/Unidad3/IMG4.gif" width="300" heigth="300px" class="image">
+                <p align="justify" class="text">Existen dos formas para aplicar la sincronización:</p>
+                <p align="justify" class="text"><b>• Bloqueo de Objetos.</b></p>
+                <p align="justify" class="text"><b>• Uso de señales.</b></p>
+                <h2 class="card-title">Bloqueo de Objectos.</h2>
+
+                <p align="justify" class="text">Muchas veces en aplicaciones multihilo, necesitamos controlar que
+                    mientras un hilo este ejecutando un método, otro hilo no vaya a ejecutar el mismo método hasta que
+                    el hilo1 termine de procesar el método, en otras palabras, que el método no se ejecute al mismo
+                    tiempo por dos hilos diferentes.</p>
+                <p align="justify" class="text">Este tipo de bloqueo se puede realizar a través de una palabra reservada
+                    llamada <b>lock</b>, que como se dijo anteriormente no permitirá que un hilo vaya a entrar a un
+                    fragmento
+                    de código, mientras otro hilo lo esté ejecutando, si un hilo intenta entrar al fragmento de código
+                    que se encuentra dentro de un <b>lock</b>, este hilo esperara a que el otro hilo termine.</p>
+                <br>
+                <img src="/Img/Unidad3/IMG5.png" width="500" heigth="500px" class="imag">
+                <h2 class="card-title">Uso de Semáforos o Señales.</h2>
+                <p align="justify" class="text">Dentro de este sistema, un hilo puede detener su ejecución y esperar una
+                    señal de otro hilo para continuar con su ejecución.</p>
+                <p align="justify" class="text">En este sistema encontramos varios sistemas como son el uso de mutex,
+                    semáforos y barreras.</p>
+                <img src="/Img/Unidad3/IMG6.jpg" width="500" heigth="500px" class="imag">
+                <h2 class="card-title">Mutex</h2>
+                <p align="justify" class="text">También conocida como cerraduras de exclusión mutua, se utilizan para
+                    implementar secciones críticas y proteger las estructuras de datos compartidas contra accesos
+                    concurrentes.</p>
+                <p align="justify" class="text">Se dice que las variables mutex, es la forma más fácil de implementar la
+                    sincronización de hilos y de proteger recursos compartidos cuando acontecen multitud de intentos de
+                    acceso sobre esos recursos. Dicha "protección" la realizan al "cerrar el candado o cerradura" para
+                    no permitir el acceso.</p>
+                <p align="justify" class="text">Solo un hilo puede cerrar un candado en un determinado instante. Incluso
+                    si varios hilos intentan cerrar el mismo candado solo uno saldrá victorioso. Ningún otro hilo podrá
+                    poseer dicho recurso hasta que el hilo que lo cerró lo abra.</p>
+                <p align="justify" class="text">Aparentemente la funcionalidad de la clase Mutex es muy parecida a Lock,
+                    una de las grandes diferencias entre ellas es que Mutex es una Clase y Lock es una Instrucción, la
+                    funcionalidad de Mutex es mayor ya que permite manejar bloqueo a nivel de Sistema Operativo, de tal
+                    forma que actúa a nivel de proceso.</p>
+                <img src="/Img/Unidad3/IMG7.jpg" width="300" heigth="300px" class="image">
+                <h2 class="card-title">Semáforos</h2>
+                <p align="justify" class="text">En el caso de los semáforos, podemos establecer un número máximo de
+                    hilos que pueden tener acceso simultáneo a un recurso compartido en específico; es decir, es una
+                    variable especial que constituye el método clásico para restringir o permitir el acceso a recursos
+                    compartidos.</p>
+                <p align="justify" class="text">Cada vez que un hilo intenta utilizar el recurso compartido, existe un
+                    contador que se va decrementando en uno y lo deja pasar. En el momento en que el contador se
+                    convierte en cero, deja bloqueado al hilo que intentó el acceso.</p>
+                <img src="/Img/Unidad3/IMG8.png" width="300" heigth="300px" class="image">
+                <h2 class="card-title">Barreras (Barrier)</h2>
+                <p align="justify" class="text">Las <b>barreras</b> son otro método de sincronización, y el más fácil de
+                    entender. Una barrera es un punto de encuentro entre varios hilos, en donde todos los hilos ejecutan
+                    una acción o diferentes acciones hasta llegar al <b>barrier</b> o punto de encuentro, una vez que
+                    han
+                    llegado todos los hilos, éstos pueden continuar con su ejecución. Esto se utiliza generalmente,
+                    cuando una aplicación funciona por fases.</p>
+                <img src="/Img/Unidad3/IMG9.jpg" width="300" heigth="300px" class="image">
+                <br>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

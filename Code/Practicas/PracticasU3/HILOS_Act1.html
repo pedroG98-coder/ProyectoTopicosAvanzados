@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.1 Cuenta Numérica y Creación de Botones</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+     <!--Librerias -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai.min.css"
+     integrity="sha512-RLF8eOxhuwsRINc7r56dpl9a3VStqrXD+udWahutJrYdyh++2Ghnf+s4jFsOyryKZt/GNjPwbXVPH3MJpKrn2g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title" align="center">Práctica:"Cuenta Numérica y Creación de Botones."</h2>
+                <h2>Solución de la Actividad 1</h2>
+                <p align="justify" class="text">• Tendremos que crear un nuevo proyecto de visual studio, escogemos la
+                    plantilla de “Aplicación
+                    de Windows Forms (.Net Framework).”
+                    Una vez creado colocaremos los elementos necesarios para llevar a cabo esta práctica, los
+                    cuales son:
+                </p>
+                <p align="justify" class="text">• 3 Buttons.</p>
+                <p align="justify" class="text">• 1 Listbox.</p>
+                <p align="justify" class="text">• 1 FlowLayoutPanel.</p>
+                <p align="justify" class="text">• 1 FlowLayoutPanel.</p>
+                <p align="justify" class="text">• Recuerda que para agregar estos componentes tendrás que dirigirte al
+                    apartado de “Cuadro
+                    de herramientas.”</p>
+                <p align="justify" class="text">• Como se muestra a continuación.</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct1/Img1.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Agrégale un nombre a cada botón. Tendrá que quedar de la siguiente
+                    manera:</p>
+                <p align="justify" class="text">• Ahora procederemos a programar cada uno de los componentes para que
+                    puedan realizar las
+                    acciones solicitadas, daremos clic derecho sobre el formulario y seleccionaremos ver código o
+                    en su caso daremos F7.</p>
+                <p align="justify" class="text">• Colocaremos en la parte de arriba using System.Threading; para poder
+                    crear hilos y usarlos
+                    dentro de nuestro programa, también colocaremos en el apartado del Form la siguiente
+                    propiedad, la cual evitara que mande un error al momento de inicializar más de dos hilos.
+                    Se vera de la siguiente manera:</p>
+                <img src="/Img/Practicas/PracticaU3/ImgAct1/Img2.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Ahora daremos clic al botón asignado para la creación de la cuenta
+                    numérica y colocaremos el
+                    siguiente código:</p>
+                 <!--Formulario Codigo-->
+                 <pre>
+                    <code class="cs">
+Thread t = new Thread(ciclo);
+t.Start();   
+                    </code>
+                </pre>
+                <p align="justify" class="text">• Lo que hará dicho código es crear un nuevo hilo que realizara un
+                    método llamado ciclo y
+                    después lo iniciamos con el comando t.start();</p>
+                <p align="justify" class="text">• Crearemos el método ciclo para la generación de la cuenta numérica,
+                    colocaremos el siguiente
+                    código:</p>
+                  <!--Formulario Codigo-->
+                  <pre>
+                    <code class="cs">
+private void ciclo()
+{
+        for (long i = 0; i < 50; i++)
+        {
+            listBox1.Items.Add(i);
+            Thread.Sleep(500);
+        }
+            MessageBox.Show("ufff.... 50");
+    }
+                        
+                    </code>
+                </pre>
+                <p align="justify" class="text">• El cual será un ciclo for que ira del 1 al 50 y lo mostrara dentro del
+                    componente listbox, este
+                    ciclo tendrá un tiempo de espera, el cual lo colocamos con el la línea de código
+                    thread.sleep(500); esto hará que la cuenta numérica tenga un pequeño descanso para mostrar
+                    el siguiente número del ciclo, también mostrara un mensaje cuando la cuenta llegue a 50.
+                    .</p>
+                <p align="justify" class="text">• Ahora daremos clic al botón encargado de mostrar el mensaje y
+                    colocaremos el síguete código:</p>
+                         <!--Formulario Codigo-->
+                         <pre>
+                            <code class="cs">
+MessageBox.Show("Hola");   
+                            </code>
+                        </pre>
+                <p align="justify" class="text">• Lo único que hará es mostrar el mensaje.</p>
+                <p align="justify" class="text">• Por último, daremos clic en el botón asignado para crear nuevos
+                    botones. Colocaremos el
+                    siguiente código:</p>
+               <!--Formulario Codigo-->
+               <pre>
+                <code class="cs">
+Button CB = new Button();
+        CB.Text = "#" + Cont++;
+        CB.Click += click;
+        this.flowLayoutPanel1.Controls.Add(CB);
+        }  
+                </code>
+            </pre>
+                <p align="justify" class="text">• Lo que hace es crear un nuevo objeto llamado CB al cual colocara como
+                    nombre a los botones
+                    #0, #1, #2, #3, etc., a como le den clic al botón, después asignamos un evento click y por último
+                    mostramos los resultados dentro del flowLayautPanel.</p>
+                <p align="justify" class="text">• El evento click deberá tener el siguiente código:</p>
+                 <!--Formulario Codigo-->
+                 <pre>
+                    <code class="cs">
+Thread T = new Thread(llenar);
+T.Start(sender);      
+                    </code>
+                </pre>
+                <p align="justify" class="text">• Solo estaremos creando un nuevo hilo el cual tendrá un método llamado
+                    llenar y también
+                    estaremos inicializando el hilo.</p>
+                <p align="justify" class="text">• Código del método llenar:</p>
+                       <!--Formulario Codigo-->
+                       <pre>
+                        <code class="cs">
+private void llenar(object sender)
+        {
+            Button CB = new Button();
+            CB = (Button)sender;
+            for (int i = 10; i>= 0; i--)
+        {
+            Thread.Sleep(500);
+            CB.Text = "" + i;
+            if (i== 0)
+        {
+            CB.Enabled = false;
+        }
+    }
+}       
+                        </code>
+                    </pre>
+                <p align="justify" class="text">• Lo que hará este método es crear un objeto llamado CB y tendrá dentro
+                    un for que iniciará una
+                    cuenta regresiva del 10 al 0, el cual lo ira mostrando como texto en el botón y al momento de
+                    llegar a 0 el botón se inhabilitará.</p>
+                <p align="justify" class="text">• Ahora solo es cuestión de ejecutar el programa y observar cómo cada
+                    que presionas un botón
+                    el programa no mandara ningún error ya que cada uno funciona con un hilo diferente.</p>
+                <h2 class="card-title" align="center">Resultado Final Actividad 1</h2>
+                <img src="/Img/Practicas/PracticaU3/ImgAct1/Img3.png" width="800px" heigth="500px" class="imagep">
+                <br>
+                <br>
+            </div>
+    </header>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

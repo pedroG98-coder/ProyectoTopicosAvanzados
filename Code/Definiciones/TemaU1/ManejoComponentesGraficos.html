@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.4 Manejo de componentes gráficos de
+        control</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Manejo de componentes Gráficos de
+                    Control. </h2>
+                <h2 class="card-title">Componentes y Contenedores </h2>
+                <img src="/Img/Unidad1/IMG6.PNG" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <br>
+                <p align="justify" class="text"> Una interfaz gráfica está construida en base a elementos gráficos
+                    básicos, los Componentes.
+                    Típicos ejemplos de estos Componentes son los botones, barras de desplazamiento, etiquetas,
+                    listas, cajas de selección o campos de texto. Los Componentes permiten al usuario interactuar
+                    con la aplicación y proporcionar información desde el programa al usuario sobre el estado del
+                    programa. En el AWT, todos los Componentes de la interface de usuario son instancias de la
+                    clase Component o uno de sus subtipos.
+                    Los Componentes no se encuentran aislados, sino agrupados dentro de Contenedores. Los
+                    Contenedores contienen y organizan la situación de los Componentes; además, los
+                    Contenedores son en sí mismos Componentes y como tales pueden ser situados dentro de
+                    otros Contenedores. También contienen el código necesario para el control de eventos, cambiar
+                    la forma del cursor o modificar el icono de la aplicación. En el AWT, todos los Contenedores
+                    son instancias de la clase Container o uno de sus subtipos.
+                </p>
+                <p align="justify" class="text">Si un ser humano quiere interactuar con una máquina necesita un medio
+                    para poder hacerlo. Ese medio es, precisamente, lo que se conoce como interfaz de usuario; la parte
+                    del sistema que interactúa con el usuario. La interfaz es un lugar de encuentro entre los bits y las
+                    personas.
+                    La interfaz es la parte visible de las aplicaciones, siendo lo que se percibe de las mismas; por
+                    ello, cada vez se les está dando una importancia mayor y se está poniendo más cuidado en su
+                    desarrollo. La creación de interfaces de usuario es un área, dentro del desarrollo de software, que
+                    ha evolucionado mucho en los últimos años y lo sigue haciendo a día de hoy. Se podría decir que la
+                    interfaz de usuario es lo primero que se juzga de una aplicación, y si no tiene la calidad adecuada
+                    puede producir rechazo por parte del usuario.
+                    Una interfaz puede incluso poner limitaciones en la comunicación de la máquina con el usuario. Todo
+                    aquello que no se pueda expresar a través de la interfaz se perderá, por ello, tiene gran
+                    importancia dentro del desarrollo de una aplicación el diseño de su interfaz. Un buen programa con
+                    una interfaz pobre y no adaptada a las tareas a realizar, no sirve de mucho, ya que la interfaz será
+                    más una barrera que un medio que facilite la interacción.
+                    Hay que tener siempre presente que la interfaz de usuario determina la habilidad de la aplicación.
+                    La habilidad es una medida de uso de un producto por determinados usuarios, con el fin de alcanzar
+                    ciertos objetivos de eficiencia, efectividad y satisfacción, todo ello dentro de un contexto de uso
+                    concreto. (Tópicos Avanzados programación.)
+                    Por lo tanto, la interfaz de usuario debe ser usable, lo que implicará que el usuario consiga
+                    realizar las tareas por medio de ella de forma rápida y sencilla, y se encuentre cómodo con la
+                    aplicación. Una interfaz gráfica de usuario (GUI) es una interfaz de usuario en la que se hace uso
+                    de un entorno gráfico.
+                    C# proporciona los elementos básicos para construir decentes interfaces de usuario.
+                </p>
+                <h2 class="card-title">Tipos de Componentes</h2>
+                <p align="justify" class="text"><b><i>Recuadros De Texto</b></i></p>
+                <p align="justify" class="text"><b>TextBox: </b>Es el más simple y utilizado. Sirve para pedir una o
+                    varias líneas de texto sin más control intrínseco que el de poder limitar la longitud, el número
+                    máximo de caracteres a introducir. </p>
+                <p align="justify" class="text"><b>MaskedTextBox: </b>Similar al anterior, añade las propiedades
+                    necesarias para conseguir que la información introducida se ajuste a una cierta máscara o patrón,
+                    como puede ser la de un teléfono, NIF, código postal, etc. </p>
+                <p align="justify" class="text"><b>RichTextBox: </b>Se utiliza para facilitar la introducción o
+                    visualización de
+                    texto con formato, usando estilos de párrafo y carácter tales como la alineación, sangrado, tipos y
+                    tamaños de letra, bolos, etc.</p>
+                <p align="justify" class="text">• En los tres casos la propiedad Text nos permite tanto recuperar el
+                    texto
+                    introducido en ejecución como modificarlo, mediante una simple asignación. </p>
+                <p align="justify" class="text">• Los controles TextBox y RichTextBox cuentan también con la propiedad
+                    Lines, una matriz de tipo string que hace posible el acceso individual a cada una de las líneas de
+                    texto en lugar de al contenido completo.</p>
+                <h2 class="card-title">Botones de Radio Y de Selección</h2>
+                <p align="justify" class="text"> A veces no es necesario que el usuario introduzca un dato escribiéndolo
+                    mediante teclado, sino que
+                    puede elegirlo entre varias opciones exclusivas entre sí o, sencillamente, marcar o desmarcar una
+                    cierta posibilidad. En estos casos se usan dos tipos de botones: <b>RadioButton</b> y
+                    <b>CheckBox</b>. Ambos
+                    tienen en común los siguientes miembros fundamentales:
+                </p>
+                <p align="justify" class="text"><b>• Text: </b>Contendrá el texto descriptivo de la opción y que
+                    aparecerá junto al botón. </p>
+                <p align="justify" class="text"><b>• Checked: </b>Esta propiedad de tipo bool determina si el botón está
+                    marcado o no.</p>
+                <p align="justify" class="text"><b>• Click:</b>El evento que se genera al hacer clic sobre uno de estos
+                    botones.</p>
+                <p align="justify" class="text"><b>• CheckedChanged:</b>Evento que notifica un cambio de la propiedad
+                    Checked.</p>
+                <p align="justify" class="text">• Funcionalmente, sin embargo, se comportan de manera diferente. Un
+                    CheckBox cambia de estado cada vez que se hace clic sobre él, invirtiéndose el valor de la propiedad
+                    Checked, sin afectar para nada al resto de controles del mismo tipo que existan en el contenedor.
+                </p>
+                <p align="justify" class="text"><b>• CheckBox </b>Es el control adecuado cuando se quiere dar una opción
+                    que el usuario puede marcar o desmarcar, del tipo sí/no, verdadero/falso.
+                </p>
+                <h2 class="card-title">Listas De Distintos Tipos</h2>
+                <p align="justify" class="text">• El siguiente grupo de componentes más utilizado es el de las listas,
+                    ya
+                    sean simples, desplegables o de elementos que pueden marcarse y desmarcarse, los tres tipos
+                    representados por los controles ListBox, ComboBox y CheckedListBox, respectivamente.</p>
+                <p align="justify" class="text">• La única diferencia entre un <b>ListBox</b> y un ComboBox es que este
+                    último
+                    aparece como un recuadro de texto con una lista desplegable asociada, siendo posible, según el
+                    estilo empleado, escribir en ese recuadro de texto en lugar de elegir un valor de la lista.</p>
+                <p align="justify" class="text">El control ListBox, por el contrario, ocupa un área mayor y muestra un
+                    cierto número de elementos de la lista, así como unas barras de desplazamiento en caso de que fuesen
+                    necesarias.</p>
+                <p align="justify" class="text">• En ambos casos las propiedades <b>SelectedIndex</b> y
+                    <b>SelectedItem</b> permiten
+                    obtener/modificar el índice del elemento elegido o directamente el elemento.
+                </p>
+                <p align="justify" class="text">• Por su parte, la particularidad del control <b>CheckedListBox</b> está
+                    en que
+                    cada elemento aparece como un <b>CheckBox</b>, de tal forma que es posible marcarlo y desmarcarlo.
+                </p>
+                <p align="justify" class="text">• Mediante la propiedad <b>CheckedItems</b> se obtiene la colección con
+                    los
+                    elementos que haya marcados en cada momento, mientras que <b>Items</b>, como en el caso de las otras
+                    listas, contendría todos los elementos, marcados y no marcados. </p>
+                <p align="justify" class="text">• Además de los ya citados en los puntos previos, hay dos controles más
+                    cuyo uso es reiterado en toda aplicación Windows: <b>Label</b> y <b>Button</b>, las etiquetas de
+                    texto y los
+                    botones. La finalidad del primero es sencillamente mostrar un texto, el que se asigne a la propiedad
+                    <b>Text</b>, para servir como título o cabecera de listas, secciones y, en general, introducir
+                    cualquier
+                    tipo de aclaración o descripción en la ventana.
+                </p>
+                <p align="justify" class="text">• Como la mayoría de los controles, <b>Label</b> dispone de propiedades
+                    como
+                    <b>Font</b>, <b>ForeColor</b> y <b>BackColor</b> que permiten configurar el tipo de letra y los
+                    colores de tinta y fondo.
+                </p>
+                <p align="justify" class="text">• El objetivo del control <b>Button</b> es desencadenar algún tipo de
+                    acción:
+                    aceptar o rechazar los datos de un formulario, acceder a una ventana auxiliar para seleccionar un
+                    archivo, etc.</p>
+                <p align="justify" class="text">• También cuenta con la propiedad <b>Text</b>, a la que asignaremos el título
+                    que deba aparecer en el botón, si bien, su característica más importante es el evento <b>Click</b> ya que
+                    será el que ponga en marcha la acción asociada. </p>
+                <p align="justify" class="text"></p>
+                <p align="justify" class="text"></p>
+                <p align="justify" class="text"></p>
+                <p align="justify" class="text"></p>
+
+
+
+               
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

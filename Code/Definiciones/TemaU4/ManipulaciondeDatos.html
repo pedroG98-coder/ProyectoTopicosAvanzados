@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.3 Manipulación de Datos</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Manipulación de Datos.</h2>
+                <img src="/Img/Unidad4/IMG14.png" width="500px" heigth="500px" class="imag">
+                <br>
+                <p align="justify" class="text">Para realizar la manipulación de datos por medio de una conexión debemos
+                    ejecutar ciertos comandos o controles, de igual forma debe lograrse previamente una conexión a la
+                    Base de Datos. </p>
+                <p align="justify" class="text"><b>Lenguaje de Manipulación de Datos</b></p>
+                <p align="justify" class="text">Lenguaje de Manipulación de Datos (Data Manipulation Language, DML) es
+                    un idioma proporcionado por los sistemas gestores de bases de datos que permite a los usuarios de la
+                    misma llevar a cabo las tareas de consulta o modificación de los datos contenidos en las Bases de
+                    Datos del Sistema Gestor de Bases de Datos. El lenguaje de manipulación de datos más popular hoy día
+                    es SQL, usado para recuperar y manipular datos en una base de datos relacional. Otros ejemplos de
+                    DML son los usados por bases de datos IMS/DL1, CODASYL u otras. </p>
+                <p align="justify" class="text"><b>Elementos del lenguaje de manipulación de datos</b></p>
+                <p align="justify" class="text"><b>• Select.</b></p>
+                <p align="justify" class="text"><b>• Insert.</b></p>
+                <p align="justify" class="text"><b>• Delete.</b></p>
+                <p align="justify" class="text"><b>• Update.</b></p>
+                <p align="justify" class="text"><b>Clasificación de los DML</b></p>
+                <p align="justify" class="text">Se clasifican en dos grandes grupos:</p>
+                <p align="justify" class="text"><b>• Lenguajes de Consulta Procedimentales</b></p>
+                <p align="justify" class="text">Lenguajes procedimentales. En este tipo de lenguaje el usuario da
+                    instrucciones al sistema para que realice una serie de procedimientos u operaciones en la base de
+                    datos para calcular un resultado final. </p>
+                <p align="justify" class="text"><b>• Lenguajes de Consulta No Procedimentales</b></p>
+                <p align="justify" class="text">En los lenguajes no procedimentales el usuario describe la información
+                    deseada sin un procedimiento específico para obtener esa información. </p>
+                <p align="justify" class="text"><b>Lenguaje de Manipulación de Datos (DML)</b></p>
+                <p align="justify" class="text">Un lenguaje de manipulación de datos (Data Manipulation Language, o DML
+                    en inglés) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los
+                    usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo
+                    de datos adecuado. </p>
+                <p align="justify" class="text">El lenguaje de manipulación de datos más popular hoy día es SQL, usado
+                    para recuperar y manipular datos en una base de datos relacional. Otros ejemplos de DML son los
+                    usados por bases de datos IMS/DL1, CODASYL u otras.</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

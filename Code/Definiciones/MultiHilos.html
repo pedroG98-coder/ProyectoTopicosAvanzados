@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación concurrente(MultiHilos)</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Tema: Programación concurrente (MultiHilos).</h2>
+                <img src="/Img/Unidad3/MultiHilos.jpg" width="600px" heigth="600px" align="center" class="imag"
+                    alt="...">
+                <br>
+                <p align="justify" class="text">Los hilos o threads, son básicamente, pequeños procesos o piezas
+                    independientes de un gran proceso. También podemos decir, que un hilo es un flujo único de ejecución
+                    dentro de un proceso (un proceso es un programa ejecutándose dentro de su propio espacio de
+                    direcciones).
+                </p>
+                <p align="justify" class="text">Un hilo no puede correr por sí mismo, se ejecuta dentro de un programa,
+                    ya que requieren la supervisión de un proceso padre para correr. Se pueden porgramar múltiples hilos
+                    de ejecución para que corran simultáneamente en el mismo programa. La utilidad de la programación
+                    multihilo resulta evidente. Por ejemplo, un navegador Web puede descargar un archivo de un sitio, y
+                    acceder a otro sitio al mismo tiempo. Si el navegador puede realizar simultáneamente dos tareas, no
+                    tendrá que esperar hasta que el archivo haya terminado de descargarse para poder navegar a otro
+                    sitio.</p>
+
+                <p align="justify" class="text">Los hilos a menudo, son conocidos o llamados procesos ligeros.</p>
+                <br>
+                <h1 class="title">Subtemas: Programación concurrente (MultiHilos).</h1>
+                <div class="containeer">
+                    <div class="caard">
+                        <img src="/Img/Unidad3/DEFHILO.png" width="300px" heigth="300px">
+                        <h4>3.1 Concepto de Hilo</h4>
+                        <p>Conoce el concepto básico de un Hilo (Thread) en el lenguaje de Programación C# (CSharp).</p>
+                        <a class="btn btn-primary" href="/Code/Definiciones/TemaU3/ConceptoHilo.html">Leer más</a>
+                    </div>
+                    <div class="caard">
+                        <img src="/Img/Unidad3/HILOYMULTIHILOS.png" width="400px" heigth="220px">
+                        <h4>3.2 Comparación de un Programa de Flujo
+                            único contra uno de flujo múltiple.</h4>
+                        <p>Conoce la diferencia entre un hilo de flujo único contra uno múltiple para el lenguaje de C# (CSharp). </p>
+                        <a class="btn btn-primary" href="/Code/Definiciones/TemaU3/ComparacionFlujoUnicoContraMultiple.html">Leer más</a>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="containeer">
+                    <div class="caard">
+                        <img src="/Img/Unidad3/CREAR.png" width="250" heigth="250px">
+                        <h4>3.3 Creación y Control de Hilos.</h4>
+                        <p>Aprende a crear y controlar hilos en el lenguaje C# (CSharp).</p>
+                        <a class="btn btn-primary" href="/Code/Definiciones/TemaU3/CreacionyControlHilo.html">Leer más</a>
+                    </div>
+                    <div class="caard">
+                        <img src="/Img/Unidad3/SINCRONIZACION.png" width="220" heigth="250px">
+                        <h4>4.4 Sincronización de hilos computación.</h4>
+                        <p>Conoce el concepto de la sincronización de hilos en el lenguaje C# (CSharp).</p>
+                        <a class="btn btn-primary" href="/Code/Definiciones/TemaU3/SincronizacionHilos.html">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </header>
+</body>
+
+</html>

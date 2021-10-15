@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2 Conexión a Origen de Datos</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Conexión a Origen de Datos.</h2>
+                <h2 class="card-title">¿Qué es Origen de Datos?</h2>
+                <p align="justify" class="text">Un origen de datos es una combinación de un origen de datos y la
+                    información de conexión necesaria para obtener acceso a dichos datos. Algunos ejemplos de orígenes
+                    de datos son SQL Server, Oracle RDBMS, hojas de cálculo y archivos de texto. Algunos ejemplos de la
+                    información de conexión podrían ser la ubicación del servidor, el nombre de la base de datos, el id.
+                    de inicio de sesión, la contraseña, así como varias opciones de controlador ODBC que describen cómo
+                    conectarse al origen de datos. Puede obtener esta información del administrador de la base de datos
+                    a la que quiera conectarse.
+                </p>
+                <p align="justify" class="text"> En la arquitectura ODBC, una aplicación como Access se conecta al
+                    Administrador de controladores
+                    ODBC. Este último, a su vez, usa un controlador ODBC específico (por ejemplo, un controlador ODBC de
+                    Microsoft SQL) para conectarse a un origen de datos. En Access, use orígenes de datos ODBC para
+                    conectarse a orígenes de datos externos a Access que no tengan controladores integrados.</p>
+                <h2 class="card-title">Crear un origen de datos en Visual C# con Microsoft Access</h2>
+                <p align="justify" class="text">Para crear un origen de datos se debe tener instalado tanto Microsoft
+                    Access como Visual Studio C#. En éste último debemos abrir el menú “Proyecto” y en la opción
+                    “Agregar nuevo origen de datos” hacer clic.
+                </p>
+                <img src="/Img/Unidad4/IMG2.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Después nos aparecerá una ventana del "Asistente para la configuración
+                    de orígenes de datos", donde nos pide elejir un tipo de origen de datos, y elegiremos la opción Base
+                    de datos, pulsamos clic en Siguiente >.
+                </p>
+                <img src="/Img/Unidad4/IMG3.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Seguido de esto, nos pedirá elegir un modelo de base de datos, del cual
+                    elegiremos "Conjunto de datos", y damos clic en Siguiente >.
+                </p>
+                <img src="/Img/Unidad4/IMG4.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Posteriormente, nos pedirá elegir la conexión de datos, desde que
+                    software haremos la conexión de la base de datos a Visual Studio, para ello, daremos clic en "Nueva
+                    conexión...", y pulsaremos clic en Siguiente >.
+                </p>
+                <img src="/Img/Unidad4/IMG5.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Después de esto, nos pedirá Agregar conexión, en este caso lo haremos
+                    con "Archivo de Base de datos de Microsoft Access (OLE.BD)", sino desean hacer una conexión de datos
+                    con Microsoft Access, la pueden hacer con otros SGBD como SQL Server, Oracle, etc.
+                </p>
+                <img src="/Img/Unidad4/IMG6.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Luego se nos pide agregar en archivo de la base de datos en Access, para
+                    esto, daremos clic en "Examinar..." y buscaremos la ubicación del archivo, una vez agregado, daremos
+                    clic en "Probar conexión" y tiene que mostrar un mensaje de que la conexión se realizo correctamente
+                    y pulsamos en "Aceptar" y en "Siguiente >".
+                </p>
+                <img src="/Img/Unidad4/IMG7.JPG" width="500px" heigth="500px" class="imag">
+                <br>
+                <img src="/Img/Unidad4/IMG8.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Al dar clic en Siguiente, aparecerá una ventana emergente como la siguiente, en la cual elegiremos NO a copiar el archivo al proyecto y modificar la conexión.
+                </p>
+                <img src="/Img/Unidad4/IMG9.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Después damos clic en Siguiente >, para guardar la cadena de conexión en el archivo configuración de la aplicación.
+                </p>
+                <img src="/Img/Unidad4/IMG10.JPG" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">Después damos clic en Siguiente >, para guardar la cadena de conexión en el archivo configuración de la aplicación.
+                </p>
+                <img src="/Img/Unidad4/IMG11.JPG" width="500px" heigth="500px"class="imag">
+                <p align="justify" class="text">Posteriormente, se nos pide Elegir los objetos de bases de datos, podemos elegir solo Tablas o solo Vistas, o ambos, en este caso solo elegiremos Tablas y damos clic en Finalizar, para terminar la conexión de origen de datos.
+                </p>
+                <img src="/Img/Unidad4/IMG12.JPG" width="500px" heigth="500px" class="imag">
+                <p  align="justify" class="text">Para comprobar que se haya hecho correctamente la conexión, en el apartado de "Orígenes de datos" de C# se mostrara el DataSet y las tablas de la base de datos. Y es así como se realiza una conexión de orígenes de datos.</p>
+                <img src="/Img/Unidad4/IMG13.JPG" width="500px" heigth="500px" class="imag">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

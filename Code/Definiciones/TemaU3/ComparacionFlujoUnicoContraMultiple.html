@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2 Comparación de un Programa de Flujo único contra uno de Flujo Múltiple</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Comparación de un Programa de Flujo único contra uno de Flujo Múltiple.</h2>
+                <img src="/Img/Unidad3/IMG2.png" width="500px" heigth="500px" class="imag">
+                <br>
+                <p align="justify" class="text">Un thread o hilo es, al igual que un proceso, un flujo de control que
+                    puede gozar de cierta autonomía (puede tener sus propias estructuras de datos), pero a diferencia de
+                    un proceso, diversos hilos dentro de una aplicación pueden compartir los mismos datos.
+                </p>
+                <p align="justify" class="text">El beneficio de ser multihilo, consiste en un mejor rendimiento
+                    interactivo y un mejor comportamiento en tiempo real.
+                </p>
+                <p align="justify" class="text">Aunque el comportamiento en tiempo real, está limitado a las capacidades
+                    del sistema operativo sobre el que corre, aún supera a los entornos de flujo único de programa
+                    (single-thread) tanto en facilidad de desarrollo, como en rendimiento.
+                </p>
+                <p align="justify" class="text">Mientras los procesos mantienen su propio espacio de direcciones y
+                    entorno de operaciones, los hilos dependen de un programa padre en lo que se refiere a recursos de
+                    ejecución.
+                </p>
+                <p align="justify" class="text">En C#, los hilos comparten el mismo espacio de memoria. Incluso
+                    comparten gran parte del entorno de ejecución, de modo que la creación de nuevos hilos es mucho más
+                    rápida que la creación de nuevos procesos. La ventaja que proporcionan los hilos, es la capacidad de
+                    tener más de un camino de ejecución en un mismo programa.
+                </p>
+                <p align="justify" class="text"><b><i>Programas de Flujo Único:</i></b>
+                </p>
+                <p align="justify" class="text">Un programa de flujo único o mono-hilvanado (single-thread) utiliza un
+                    único flujo de control (thread) para controlar su ejecución. Muchos programas no necesitan la
+                    potencia o utilidad de múltiples flujos de control. Sin necesidad de especificar explícitamente que
+                    se quiere un único flujo de control, muchos de los applets y aplicaciones son de flujo único.
+                </p>
+                <p align="justify" class="text"><b><i>Programas de Flujo Multiples:</i></b>
+                </p>
+                <p align="justify" class="text">La utilización de hilos (threads) en C#, permite una enorme
+                    flexibilidad a los programadores a la hora de plantearse el desarrollo de aplicaciones. La
+                    simplicidad para crear, configurar y ejecutar hilos de ejecución, permite que se puedan implementar
+                    muy poderosas y portables aplicaciones que no se puede con otros lenguajes de tercera generación. En
+                    un lenguaje orientado a objetos e internet como es C#, esta herramienta es vital.
+                </p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

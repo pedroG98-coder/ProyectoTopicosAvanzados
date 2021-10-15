@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.5 Registro de Usuarios(SQL Server)</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title" align="center">Práctica:"Registro de Usuarios(SQL Server)"</h2>
+                <h2>Solución de la Actividad 5</h2>
+                <p align="justify" class="text">• Creamos un nuevo proyecto de Android Studio.</p>
+                <p align="justify" class="text">• Seleccionamos la plantilla Emty Activity.</p>
+                <p align="justify" class="text">• Le damos un nombre y finish.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img1.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Colocaremos los elementos correspondientes.</p>
+                <p align="justify" class="text">• 2 TextView.</p>
+                <p align="justify" class="text">• 2 EditText.</p>
+                <p align="justify" class="text">• 1 Button.</p>
+                <p align="justify" class="text">• Modificaremos su texto e ID.</p>
+                <p align="justify" class="text">• Quedará de la siguiente manera.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img2.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Creamos una base de datos sencilla en SQLServer y agregamos unos
+                    datos.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img3.png" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">• Ahora nos dirigiremos a la carpeta manifest y abriremos el archivo
+                    AndroidManifest.xml.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img4.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Creamos los permisos a internet.</p>
+                <p align="justify" class="text">• Quedará de la siguiente manera.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img5.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• En este caso usaremos un Driver de java de conexión, el cual nos
+                    permitirá conectarnos
+                    con la base de datos.</p>
+                <p align="justify" class="text">• Nos dirigimos a cambiar la vista de nuestro proyecto como se muestra a
+                    continuación y
+                    colocaremos el Dirver en la carpeta app, libs.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img6.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Para descargar la librería tendrás que ingresar a este sitio web: 
+                    <a href="https://sourceforge.net/projects/jtds/files/" target="_blank" class="btn btn-info">
+                        Java Driver Connectionn</a>
+                    le darás a download y lo colocaras en la carpeta libs como ya
+                    lo he mencionado.</p>
+                <p align="justify" class="text">• Una vez agregada le daremos clic derecho al Driver y elijaremos Add
+                    ass Library.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img7.png" width="500px" heigth="500px" class="imag">
+                <p align="justify" class="text">• Ahora nos dirigiremos a la clase MainActivity y colocaremos los
+                    objetos tipo EditText y un
+                    Button.</p>
+                <p align="justify" class="text">• Y los asociaremos los elementos de nuestro layout con dichos objetos.
+                </p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img8.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Crearemos una función la cual permitirá establecer conexión con la
+                    base de datos a la
+                    queramos.</p>
+                <p align="justify" class="text">• Agregamos un objeto de la clase conexión para crear una conexión con
+                    la base de datos.</p>
+                <p align="justify" class="text">• Luego registramos el permiso de acceso para la aplicación.</p>
+                <p align="justify" class="text">• Conectaremos la aplicación al SQLServer.</p>
+                <p align="justify" class="text">• Usamos un Class.forname para declarar el driver de conexión.</p>
+                <p align="justify" class="text">• Obtenemos la conexión a la base de datos que deseamos, como argumentos
+                    colocaremos la dirección ip de nuestro pc, en nombre de la base de datos, usuario y
+                    contraseña.</p>
+                <p align="justify" class="text">• Quedará de la siguiente manera:</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img9.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Ahora crearemos un método el cual se encargara de agregar los datos a
+                    la base de
+                    datos.</p>
+                <p align="justify" class="text">• Haciendo uso de la clase PreparedStatement y la función creada,
+                    hacemos uso de una
+                    consulta insert con sus parámetros requeridos.</p>
+                <p align="justify" class="text">• Luego asignamos los valores a los parámetros, en los dos EditText de
+                    nuestro formulario.</p>
+                <p align="justify" class="text">• Mediante executeUpdate ejecutamos la consulta creada.</p>
+                <p align="justify" class="text">• Por último, colocamos un mensaje de confirmación y uno en caso de
+                    error.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img10.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Nos ubicamos en el método onCreate del MainActivity.</p>
+                <p align="justify" class="text">• Crearemos el evento clic de nuestro botón.</p>
+                <p align="justify" class="text">• Dentro del evento colocamos el método agregarUsuario.</p>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/Img11.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Solo queda probar la aplicación y observar cómo se van registrando los
+                    elementos a la
+                    base de datos.</p>
+                <h2 class="card-title" align="center">Resultado Final Actividad 5</h2>
+                <h2 class="card-title" align="center">Aplicación Móvil</h2>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/ImgResultadoApp.png" width="300px" heigth="300px"
+                    class="image">
+                <h2 class="card-title" align="center">Base de Datos</h2>
+                <img src="/Img/Practicas/PracticaU5/ImgAct5/ImgResultadoBD.png" width="500px" heigth="500px"
+                    class="imag">
+                <br>
+                <br>
+            </div>
+    </header>
+</body>
+
+</html>

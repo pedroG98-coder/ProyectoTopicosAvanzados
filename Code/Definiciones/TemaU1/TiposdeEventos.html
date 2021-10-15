@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.2 Tipos de Eventos</title>
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+                <h1>Tópicos Avanzados de Programación</h1>
+                <ul class="menu-box">
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Inicio
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                            <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                            <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                            <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Definiciones
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                                (MultiHilos).</a>
+                            <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                                dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Prácticas
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                            <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                            <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Evaluación
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                            <a href="#">Unidad 2: Componentes y librerías.</a>
+                            <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                            <a href="#">Unidad 4: Acceso a datos.</a>
+                            <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Referencias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                            <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <button class="drop-down-button">Mi Cuenta
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="drop-down-menu-content">
+                            <a href="#">Cerrar Sesion</a>
+                        </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title">Tipos de Eventos.</h2>
+                <img src="/Img/Unidad1/IMG4.png" width="500px" heigth="500px" align="center" class="imag" alt="...">
+                <br>
+                <p align="justify" class="text">Un evento en C# es el modo que tiene una clase de proporcionar
+                    notificaciones a los clientes
+                    de la clase cuando ocurre algo digno de reseñar en un objeto. El uso más habitual para los
+                    eventos se produce en las interfaces gráficas; normalmente, las clases que representan
+                    controles de la interfaz disponen de eventos que se notifican cuando el usuario hace algo con
+                    el control (por ejemplo, hacer clic en un botón).</p>
+                <h2 class="card-title">Eventos Principales</h2>
+                <p align="justify" class="text"> <i><b>Activated:</b></i> Se produce cuando el formulario se activa por código de
+                    programa o por parte del usuario. Para activar un formulario en tiempo de ejecución usando código,
+                    llame al método Activate. Este evento se puede usar para tareas tales como la actualización del
+                    contenido del formulario tomando como base los cambios efectuados en sus datos cuando no estaba
+                    activado.
+                </p>
+                <p align="justify" class="text"> <i><b>Click:</b></i> El evento Click pasa un EventArgs a su controlador de eventos, por lo que sólo indica 
+                    que se ha producido un clic. Si necesita información del mouse más específica (botón, número 
+                    de clics, rotación de la rueda o ubicación), utilice el evento MouseClick. Sin embargo, no se 
+                    producirá el evento MouseClick si el clic se produce por una acción distinta de la del mouse, 
+                    como presionar la tecla ENTRAR.
+                </p>
+                <p align="justify" class="text"> <i><b>MouseMove:</b></i> Este evento indica que cuando pase el puntero del mouse por el formulario se 
+                    ejecutará lo que este codificado en él.
+                </p>
+                <p align="justify" class="text"> <i><b>FormClosing:</b></i> Este evento se ejecutará cuando se cierre la ventana. Por ejemplo, si queremos 
+                    visualizar un mensaje de agradecimiento cuando se cierre la ventana.
+                </p>
+                <p align="justify" class="text"> <i><b>ContexMenuChanged:</b></i> Este evento se provoca si la propiedad ContextMenu se modifica 
+                    mediante programación o interacción del usuario.                    
+                </p>
+                <p align="justify" class="text"> <i><b>CursorChanged:</b></i> Este evento se provoca si la propiedad Cursor se modifica mediante 
+                    programación o interacción del usuario.                
+                </p>
+                <p align="justify" class="text"> <i><b>DoubleClick:</b></i> Se produce cuando se hace doble clic en el control, un doble clic viene 
+                    determinado por la configuración del mouse en el sistema operativo del usuario.
+                    El usuario puede establecer el tiempo entre los clics de un botón del mouse que debe 
+                    considerarse como un doble clic y no como dos clics.      
+                </p>
+                <p align="justify" class="text"> <i><b>Load:</b></i> Se produce antes de que se muestre un formulario por primera vez, este evento se puede 
+                    usar para realizar tareas tales como la asignación de los recursos que utiliza el formulario.     
+                </p>
+                <p align="justify" class="text"> <i><b>MenúStart:</b></i> Este evento se provoca cuando el usuario hace clic en cualquier elemento del 
+                    menú. Este evento se puede usar para realizar tareas tales como la habilitación y 
+                    deshabilitación de los controles del formulario a los que el usuario no debe tener acceso cuando
+                    se está teniendo acceso a los menús.
+                </p>
+                <p align="justify" class="text"> <i><b>MouseDoubleClick:</b></i> El evento MouseDoubleClick se produce cuando el usuario presiona dos 
+                    veces un botón del mouse en rápida sucesión cuando el cursor está sobre el control. La 
+                    configuración del mouse del sistema operativo del usuario determina el intervalo de tiempo que 
+                    separa dos clics únicos de un doble clic.
+                </p>
+                <p align="justify" class="text"> <i><b>Shown:</b></i> El evento Shown sólo se produce la primera vez que se muestra un formulario; este 
+                    evento no se genera al minimizarlo, maximizarlo, restaurarlo, ocultarlo, mostrarlo, o invalidarlo 
+                    y dibujarlo de nuevo. Para obtener más información sobre el orden de eventos de un formulario, 
+                    vea Orden de eventos en los formularios Windows Forms.
+                </p>
+                <p align="justify" class="text"> <i><b>Layout:</b></i>  el evento Layout se produce cuando se agregan o se quitan controles secundarios, 
+                    cuando los límites del control cambian o cuando se producen otros cambios que pueden afectar 
+                    al diseño del control. El evento de diseño puede suprimirse mediante los 
+                    métodos SuspendLayout y ResumeLayout. La suspensión del diseño le permite realizar varias 
+                    acciones en un control sin tener que realizar un diseño para cada cambio. Por ejemplo, si se 
+                    cambia el tamaño de un control y se mueve dicho control, cada operación provocará un 
+                    evento Layout.
+                </p>
+                <p align="justify" class="text"> <i><b>Scroll:</b></i> Este evento se provoca cuando se hace clic en cualquier elemento de un menú que 
+                    hace que se ejecute un comando y el menú pierda el foco. Este evento se puede usar para 
+                    realizar tareas tales como la actualización del texto de un control StatusBar o la habilitación y 
+                    deshabilitación de los botones de una ToolBar.
+                </p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

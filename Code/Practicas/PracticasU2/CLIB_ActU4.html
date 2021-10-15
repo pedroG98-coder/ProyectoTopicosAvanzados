@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.4 Archivo de Texto</title>
+    <link rel="stylesheet" href="/Css/Card.css">
+    <link rel="stylesheet" href="/Css/Estilo.css">
+    <!--Librerias-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai.min.css"
+        integrity="sha512-RLF8eOxhuwsRINc7r56dpl9a3VStqrXD+udWahutJrYdyh++2Ghnf+s4jFsOyryKZt/GNjPwbXVPH3MJpKrn2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Tópicos Avanzados de Programación</h1>
+            <ul class="menu-box">
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Inicio
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Inicio/Introduccion.html">Introducción</a>
+                        <a href="/Code/Inicio/Resumen.html">Resumen</a>
+                        <a href="/Code/Inicio/Desarrollo.html">Desarrollo</a>
+                        <a href="/Code/Inicio/InsVSCODE.html">Instalacion de Visua Studio 2019</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Definiciones
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Definiciones/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Definiciones/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Definiciones/MultiHilos.html">Unidad 3: Programación concurrente
+                            (MultiHilos).</a>
+                        <a href="/Code/Definiciones/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Definiciones/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Prácticas
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Practicas/GraficaUsuario.html">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="/Code/Practicas/ComponentesLibrerias.html">Unidad 2: Componentes y librerías.</a>
+                        <a href="/Code/Practicas/MultiHilos.html">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="/Code/Practicas/Accesoadatos.html">Unidad 4: Acceso a datos.</a>
+                        <a href="/Code/Practicas/ProgramacionDispositivosMoviles.html">Unidad 5: Programación de
+                            dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Evaluación
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Unidad 1: Interfaz gráfica de usuario.</a>
+                        <a href="#">Unidad 2: Componentes y librerías.</a>
+                        <a href="#">Unidad 3: Programación concurrente (MultiHilos).</a>
+                        <a href="#">Unidad 4: Acceso a datos.</a>
+                        <a href="#">Unidad 5: Programación de dispositivos móviles.</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Referencias
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="/Code/Referencias/Canales_YouTube.html">Canales Youtube</a>
+                        <a href="/Code/Referencias/Libros_Manuales.html">Libros</a>
+                    </div>
+                </div>
+                <div class="drop-down-menu">
+                    <button class="drop-down-button">Mi Cuenta
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="drop-down-menu-content">
+                        <a href="#">Cerrar Sesion</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <br>
+        <div class="card" style="width: 80rem;">
+            <div class="card-body">
+                <h2 class="card-title" align="center">Práctica:"Archivo de Texto"</h2>
+                <h2>Solución de la Actividad 4</h2>
+                <p align="justify" class="text">• Para poder realizar esta actividad tendrás que crear un nuevo proyecto
+                    en visual studio y
+                    seleccionaras la plantilla llamada Biblioteca de clases (.NET Framework). Como se muestra a
+                    continuación.</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img1.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Le daremos a siguiente, colocaremos un nombre al proyecto y daremos a
+                    crear.
+                    Una vez tengas el proyecto creado cambiaras el nombre de la clase generada automáticamente
+                    por Escritura, como se muestra a continuación:</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img2.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Dentro de la clase colocaremos el siguiente código:</p>
+                <!--Formulario Codigo-->
+                <pre>
+                <code class="cs">
+public string Ruta { get; set; } 
+public Escritura(string ruta)
+        {
+            this.Ruta = ruta;
+        }
+            public void Escribir(string mensaje)
+        {
+            StreamWriter sw = new StreamWriter(this.Ruta,true);
+            sw.WriteLine(mensaje);
+            sw.Close();
+     }
+       
+             </code>
+</pre>
+                <p align="justify" class="text">• El cual creamos una variable llamada ruta y la encapsulamos con los
+                    métodos get y set,
+                    después creamos un método llamado Escribir el cual recibe como variable a mensaje, lo que
+                    hace es guardar el mensaje dentro de la ruta la cual tendrá un archivo de texto donde se
+                    guardará lo que hayamos escrito.</p>
+                <p align="justify" class="text">• Ahora crearemos una clase llamada Lectura y dentro de ella colocaremos
+                    el siguiente código:</p>
+                <!--Formulario Codigo-->
+                <pre>
+                    <code class="cs">
+public string Ruta { get; set; }
+public Lectura(string Ruta)
+    {
+        this.Ruta = Ruta;
+    }
+        public string Leer()
+    {
+        StreamReader sr = new
+        StreamReader(this.Ruta);
+        string contenido = sr.ReadToEnd();
+        sr.Close();
+        return contenido;
+}
+                 </code>
+    </pre>
+                <p align="justify" class="text">• Es similar a la clase escritura solo que en esta mostrara todo lo que
+                    se haya guardo dentro del
+                    archivo de texto.</p>
+                <p align="justify" class="text">• Ahora solo queda dar clic derecho sobre el proyecto y seleccionar
+                    compilar, esto se hace para
+                    que se genere la dll que utilizaremos en nuestro síguete programa. Para verificar que se haya
+                    creado la dll darás clic derecho sobre el proyecto y seleccionaras “Abrir carpeta desde el
+                    Explorador de archivos.”.</p>
+                <p align="justify" class="text">• Una vez abierta la ventana, abrirás la carpeta bin y después debug,
+                    ahí estará la DLL creada
+                    al momento de compilar el programa.</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img3.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Guarda la ruta, ya que se utilizará para poder utilizarla en el
+                    siguiente programa.</p>
+                <p align="justify" class="text">• Ahora crearemos el programa que utilizara la DLL creada, crearemos un
+                    proyecto de consola.
+                    Como se muestra a continuación:</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img4.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Le daremos a síguete, colocaremos un nombre al proyecto y daremos a
+                    crear. Una vez creado
+                    el proyecto daremos clic derecho en referencias y seleccionaremos agregar referencia se abrirá
+                    una ventana como esta:</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img5.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Daremos clic en examinar y colocaremos la dirección donde se encuentra
+                    guardada la dll y le
+                    daremos a agregar y aceptar.</p>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/Img6.png" width="800px" heigth="500px" class="imagep">
+                <p align="justify" class="text">• Colocaremos el síguete código dentro de la clase Program.cs:</p>
+                <!--Formulario Codigo-->
+                <pre>
+                        <code class="cs">
+class Program
+    {
+        static void Main(string[] args)
+        {
+            string ruta = @"C:\pruebas\archivodll.txt";
+            Escritura e = new Escritura(ruta);
+            Console.WriteLine("Escriba un mensaje");
+            string mensaje = Console.ReadLine();
+            e.Escribir(mensaje);
+            Console.WriteLine("Escrito... ");
+            Console.WriteLine("");
+            Console.WriteLine("Lectura... ");
+            Lectura l = new Lectura(ruta);
+            Console.WriteLine(l.Leer());
+            Console.ReadKey();
+    }
+}
+                        </code>
+                    </pre>
+                <p align="justify" class="text">• Lo que hace es crear la variable ruta donde se encuentra el archivo de
+                    texto, después solo
+                    mandamos a llamar los métodos creados dentro de la DLL y los mostramos a través de una
+                    línea de comando.</p>
+                <h2 class="card-title" align="center">Resultado Final Actividad 4</h2>
+                <img src="/Img/Practicas/PracticaU2/ImgAct4/ImgResultadoCMD.png" width="800px" heigth="500px"
+                    class="imagep">
+                <br>
+                <br>
+            </div>
+    </header>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
